@@ -1,0 +1,2403 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+ <head> 
+	<title>千柏渡客户版</title> 
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" /> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui" /> 
+	<meta name="apple-mobile-web-app-capable" content="yes" /> 
+	<meta http-equiv="Pragma" content="no-cache" /> 
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+	<link rel="stylesheet" type="text/css" href="css/af.ui.css" /> 
+	<link rel="stylesheet" type="text/css" href="css/rainbow.css" /> 
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/zsmtemp.css" /> 
+	<script type="text/javascript" charset="utf-8" src="lib/jquery.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/fastclick.min.js"></script> 
+	<script type="text/javascript" charset="utf-8" src="js/appframework.ui.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/idukou.js"></script>
+	<script type="text/javascript">
+		$.afui.setBackButtonVisibility(false); 
+		$.afui.useOSThemes=false;
+		/* This function runs when the content is loaded.*/
+		 $(document).ready(function(){
+			 $.afui.autoLaunch = false; //By default, it is set to true and you're app will run right away.  We set it to false to show a splashscreen
+				setTimeout(function(){
+						$.afui.launch();
+				},1500);
+		});
+		 </script> 
+ </head> 
+ <body class="ios7"> 
+	<div id="afui"> 
+	 <div id="splashscreen" class="ui-loader heavy">
+	 	 <span class="ui-ico-tbd ui-icon-f80 c_white spin"></span> 
+	 </div>
+		<!--///////////////////////礼仪师////////////////////////////////-->  
+	 <div class="view"> 
+			<header class="ui-header ui-header-positive ui-pulic-header">
+				<a href="#location" class="ui-newstips locat-bg"data-transition="up">
+			        <span class="ui-ico ui-locat-icon c_white">
+			        </span>
+			        <div id="mapid">杭州市 西湖区 文三路90号 创新大厦B406</div>
+			        <span class="ui-ico ui-ico-down c_white"></span>
+			    </a>
+			</header>
+			<div class="ui-form">
+				<form action="#">
+					<div class="ui-form-item ui-border-b">
+						<div class="ui-select-group ui-tomb-select">
+							<div class="ui-select">
+								<select>
+									<option selected>排序</option>
+									<option >按销量</option>
+									<option>按评价</option>
+									<option>按距离</option>
+									<option>按规模</option>
+									<option>按价格</option>
+								</select>
+							</div>
+							<div class="ui-select">
+								<select>
+									<option selected>全部类型</option>
+									<option>白事一条龙</option>
+									<option>灵堂布置</option>
+									<option>遗体运输</option>
+								</select>
+							</div>
+							<div class="ui-select">
+								<select>
+									<option selected>优惠类型</option>
+									<option >新用户优惠</option>
+									<option>可使用代金券</option>
+									<option>限时优惠</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div> 
+			<div class="pages"> 
+				<div class="panel active" id="main">
+					<ul class="ui-list ui-border-tb ui-etiquette-pbottom ui-list-active">
+						<li>
+							<div class="ui-avatar">
+									<span style="background-image:url(img/u141.png)"></span>
+							</div>
+							<div class="ui-list-info">
+								<h4 class="ui-nowrap">华颜&nbsp;&nbsp;<i class="ui-txt-sub c_turquoise">高级礼仪师</i></h4>
+								<p><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i>&nbsp;<span class="ui-txt-tips">56785单</span></p>
+								<p class="ui-nowrap ui-txt-info ui-etiquette-top   ">当前状态:营业中<span>789米</span></p>
+								<h5 class="ui-border-t ui-etiquette-tit"><label class="ui-label-s">首</label>&nbsp;&nbsp;<span class="ui-txt-info">首单赠送200元代金券</span></h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="ui-list ui-border-tb ui-etiquette-pbottom ui-list-active">
+						<li>
+							<div class="ui-avatar">
+									<span style="background-image:url(img/u143.png)"></span>
+							</div>
+							<div class="ui-list-info">
+								<h4 class="ui-nowrap">李小林&nbsp;&nbsp;<i class="ui-txt-sub c_turquoise">高级礼仪师</i></h4>
+								<p><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i>&nbsp;<span class="ui-txt-tips">585单</span></p>
+								<p class="ui-nowrap ui-txt-info ui-etiquette-top   ">当前状态:营业中<span>993米</span></p>
+							</div>
+						</li>
+					</ul>
+					<ul class="ui-list ui-border-tb ui-etiquette-pbottom ui-list-active">
+						<li>
+							<div class="ui-avatar">
+									<span style="background-image:url(img/u145.jpg)"></span>
+							</div>
+							<div class="ui-list-info">
+								<h4 class="ui-nowrap">周华兰&nbsp;&nbsp;<i class="ui-txt-sub c_turquoise">高级礼仪师</i></h4>
+								<p><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i>&nbsp;<span class="ui-txt-tips">56785单</span></p>
+								<p class="ui-nowrap ui-txt-info ui-etiquette-top   ">当前状态:营业中<span>993米</span></p>
+								<h5 class="ui-border-t ui-etiquette-tit"><label class="ui-label-s">首</label>&nbsp;&nbsp;<span class="ui-txt-info">首单赠送300元代金券</span></h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="ui-list ui-border-tb ui-etiquette-pbottom ui-list-active">
+						<li>
+							<div class="ui-avatar">
+									<span style="background-image:url(img/u66.jpg)"></span>
+							</div>
+							<div class="ui-list-info">
+								<h4 class="ui-nowrap">成承志&nbsp;&nbsp;<i class="ui-txt-sub c_turquoise">高级礼仪师</i></h4>
+								<p><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i>&nbsp;<span class="ui-txt-tips">565单</span></p>
+								<p class="ui-nowrap ui-txt-info ui-etiquette-top">当前状态:营业中<span>993米</span></p>
+							</div>
+						</li>
+					</ul>
+					<div class="ui-loading-wrap">
+						<p>加载中</p>
+						<i class="ui-loading"></i>
+					</div>
+				</div> 
+			</div> 
+			<footer class="ui-footer ui-footer-btn ui-public-footer"> 
+			 <ul class="ui-tiled ui-border-t ui-txt-tips"> 
+				<li class="ui-footer-info ui-footer-active"><a href="#main"><i class="ui-ico-pressed"></i><span>礼仪师</span></a></li> 
+				<li class="ui-footer-info "><a href="#tombpage"><i class="ui-ico-project"></i><span>选墓</span></a></li> 
+				<li class="ui-footer-info  "><a href="#findpage"><i class="ui-ico-browse"></i><span>发现</span></a></li>
+				<li class="ui-footer-info  "><a href="#orderpage"><i class="ui-ico-orderman"></i><span>订单</span></a></li> 
+				<li class="ui-footer-info"><a href="#userpage"><i class="ui-ico-my"></i><span>我的</span></a></li> 
+			 </ul> 
+			</footer>
+	 </div>
+	 <!--end-->
+		<!--///////////////////////切换位置////////////////////////////////-->  
+	 <div class="view"> 
+			<header class="ui-header ui-header-positive ui-pulic-header"> 
+				<a href="#main" data-transition="slide-left" class="ui-href-l"><i class="ui-icon-prev"><span>返回</span></i></a>
+				<h2>切换位置</h2> 
+			</header>
+			<div class="ui-searchbar-wrap ui-border-b">
+			    <div class="ui-searchbar ui-border-radius">
+			        <i class="ui-ico-search"></i>
+			        <div class="ui-searchbar-text">请输入地址</div>
+			        <div class="ui-searchbar-input"><input value="" type="tel" placeholder="请输入地址" autocapitalize="off"></div>
+			        <i class="ui-icon-close"></i>
+			    </div>
+			    <button class="ui-searchbar-cancel">取消</button>
+			</div>
+<!-- <script src="http://i.gtimg.cn/vipstyle/frozenjs/1.0.1/frozen.js?_bid=304"></script> -->
+			<script src="js/frozen.js"></script>
+			<script type="text/javascript">
+			    $('.ui-searchbar').tap(function(){
+			        $('.ui-searchbar-wrap').addClass('focus');
+			        $('.ui-searchbar-input input').focus();
+			    });
+			    $('.ui-searchbar-cancel').tap(function(){
+			        $('.ui-searchbar-wrap').removeClass('focus');
+			    });
+			</script>
+			<div class="pages"> 
+				<div class="panel active" id="location">
+					<ul class="ui-list ui-list-text ui-border-b ui-listcenter">
+						<li><a href="#main"><i class="ui-ico-location c_turquoise"></i>&nbsp;&nbsp;定位当前位置</a></li>
+					</ul>
+					<ul class="ui-list ui-list-pure ui-border-tb">
+						 <li class="ui-border-t">
+						 	<h4>益乐新材</h4>
+					        <p class="ui-txt-tips">浙江省杭州市西湖区益乐路口</p>
+					    </li>
+					    <li class="ui-border-t">
+						 	<h4>益乐新材</h4>
+					        <p class="ui-txt-tips">浙江省杭州市西湖区益乐路口</p>
+					    </li>
+					    <li class="ui-border-t">
+						 	<h4>益乐新材</h4>
+					        <p class="ui-txt-tips">浙江省杭州市西湖区益乐路口</p>
+					    </li>
+					    <li class="ui-border-t">
+						 	<h4>益乐新材</h4>
+					        <p class="ui-txt-tips">浙江省杭州市西湖区益乐路口</p>
+					    </li>
+					    <li class="ui-border-t">
+						 	<h4>益乐新材</h4>
+					        <p class="ui-txt-tips">浙江省杭州市西湖区益乐路口</p>
+					    </li>
+					    <li class="ui-border-t">
+						 	<h4>益乐新材</h4>
+					        <p class="ui-txt-tips">浙江省杭州市西湖区益乐路口</p>
+					    </li>
+					</ul>
+					<div class="ui-loading-wrap">
+					    <p>加载中</p>
+					    <i class="ui-loading"></i>
+					</div>
+				</div> 
+			</div> 
+	 </div> 
+	 <!--end-->
+	 <!--end-->
+		<!--///////////////////////礼仪师详情////////////////////////////////-->  
+	 <div class="view"> 
+			<header class="ui-header ui-header-positive ui-pulic-header"> 
+				<a href="#main" data-transition="slide-left" class="ui-href-l"><i class="ui-icon-prev"><span>返回</span></i></a>
+				<h2>礼仪师详情</h2> 
+			</header>  
+			<div class="pages"> 
+				<div class="panel active" id="etiquetteDetails">
+					<ul class="ui-list ui-border-b ui-etiquette-pbottom">
+						<li>
+							<div class="ui-avatar">
+									<span style="background-image:url(img/u141.png)"></span>
+							</div>
+							<div class="ui-list-info">
+								<h4 class="ui-nowrap">华颜</h4>
+								<p>高级礼仪师<span class="ui-txt-tips">&nbsp;&nbsp;|&nbsp;&nbsp;56785单</span></p>               
+							</div>
+						</li>
+						<li class="ui-border-t">
+							<div class="ui-list-info">
+								<h5 class="ui-txt-info">服务区域：杭州西湖区、拱墅区</h5>
+								<p>从事殡仪服务已有10年，行业经验丰富。为人细致。</p>
+							</div>
+						</li>
+						<li class="ui-border-t ui-etdd-padding">
+							<div class="ui-etdd-appraise">
+								<p>评价</p>
+								<i class="ui-ico-evaluatebig ui-txt-f32 c_alizarin"></i><i class="ui-ico-evaluatebig ui-txt-f32 c_alizarin"></i><i class="ui-ico-evaluatebig ui-txt-f32 c_alizarin"></i><i class="ui-ico-evaluatebig ui-txt-f32 c_alizarin"></i><i class="ui-ico-evaluatebig ui-txt-f32 c_alizarin"></i>
+							</div>
+							<div class="ui-etdd-p"><a href="tel:800-800-8800" data-transition="slide-left"><i class="ui-ico-csad ui-txt-f36 c_turquoise"></i><p>客服电话</p></a></div>
+						</li>
+					</ul>
+					<div class="ui-btn-wrap ui-btn-skip"><a id="ui-sub-yy" class="ui-btn-lg ui-btn-cbgreen">立即预约</a></div>
+					<script type="text/javascript">
+					//判断登录
+					$("#ui-sub-yy").on('tap',function(){
+						$.afui.popup( {
+						   title:"提示",
+						   message:"您还没有登录，登录后才能预约礼仪师。!",
+						   cancelText:"取消",
+						   cancelCallback: function(){console.log("Done for!");},
+						   doneText:"立即登录",
+						   doneCallback: function(){
+						   	$.afui.loadContent("#loginpage",false,false,"up");},
+						   cancelOnly:false
+						 });
+					})
+
+					</script>
+					<div class="ui-tab" >
+						 <ul class="ui-tab-nav ui-border-b">
+								<li class="current">服务介绍</li>
+								<li >评价（109）</li>
+						</ul>
+					</div>
+					<div class="ui-tab">
+						<dl class="ui-tab-dir">
+							<dd class="current">
+							<ul class="ui-list ui-list-pure ui-border-tb">
+								<li class="ui-border-t">
+									<div class="ui-txt-sub ui-rap-tit">
+										<h3>服务内容：</h3>
+										<p>1）有专业人员特快翻拍照片，设置灵堂（如需要，有专业人员为逝者穿衣）</p>
+										<br/>
+										<p>2）根据家属需要，提供所有丧事用品。（香烛、寿衣《寿衣由厂家直销》等等）</p>
+										<br/>
+										<p>3）殡仪馆费用，按国家规定，根据项目，统一收费。（费用由家属直接与殡仪馆结算）</p>
+										<br/>
+										<p>你选择了我、我将尽心为你一条龙服务、专车接送，各大陵园。布置灵堂、电脑画像、瓷像、香、蜡烛、纸钱、寿衣、花圈上门服务、搭帐篷等。 <br>
+										<br>
+										免费协助办理死亡殡葬证明、注销户口等。 <br>
+										<br>
+										坚持丧户至上、服务第一的宗旨，殡仪服务做 <br>
+										到准确、优质、快捷、无误，以丧户满意为标准。 <br>
+										<br>
+										提供24小时殡仪一条龙引导服务。</p>
+										<br>
+										<p>收费说明：</p>
+										<br>
+										<style type="text/css">
+										.ui-table-rowbor{border-bottom:1px solid #eee; border-left: 1px solid #eee; width:100%;}
+										.ui-table-rowbor td{ border-right:1px solid #eee; border-top: 1px solid #eee; text-align: center;  }
+										</style>
+										<table  cellspacing="0" cellpadding="0" class="ui-table-rowbor">
+												<tr>
+														<td><p>名称 </p></td>
+														<td><p>金额 </p></td>
+														<td><p>名称 </p></td>
+														<td><p>金额 </p></td>
+												</tr>
+												<tr>
+														<td><p>遗体接送 </p></td>
+														<td><p>500</p></td>
+														<td><p>冰箱冷藏 </p></td>
+														<td><p>300</p></td>
+												</tr>
+												<tr>
+														<td><p>遗体出殡 </p></td>
+														<td><p>200</p></td>
+														<td><p>针剂防腐 </p></td>
+														<td><p>1200</p></td>
+												</tr>
+												<tr>
+														<td><p>扛    尸 </p></td>
+														<td><p>290</p></td>
+														<td><p>卫生盒 </p></td>
+														<td><p>15</p></td>
+												</tr>
+												<tr>
+														<td><p>火    化 </p></td>
+														<td><p>3000</p></td>
+														<td><p>安息罩 </p></td>
+														<td><p>190</p></td>
+												</tr>
+												<tr>
+														<td><p>车辆消毒 </p></td>
+														<td><p>30</p></td>
+														<td><p>骨灰寄存 </p></td>
+														<td><p>490</p></td>
+												</tr>
+												<tr>
+														<td><p>更    衣 </p></td>
+														<td><p>450</p></td>
+														<td><p>洁具袋 </p></td>
+														<td><p>180</p></td>
+												</tr>
+												<tr>
+														<td><p>当面化妆 </p></td>
+														<td><p>666</p></td>
+														<td><p>污物袋 </p></td>
+														<td><p>5</p></td>
+												</tr>
+												<tr>
+														<td><p>特殊整容化妆 </p></td>
+														<td><p>5000</p></td>
+														<td><p>束花 </p></td>
+														<td><p>360</p></td>
+												</tr>
+												<tr>
+														<td><p>一般整容化妆 </p></td>
+														<td><p>1000</p></td>
+														<td><p>骨灰盒 </p></td>
+														<td><p>999</p></td>
+												</tr>
+												<tr>
+														<td><p>礼    厅 </p></td>
+														<td><p>888</p></td>
+														<td ><p>&nbsp;</p></td>
+														<td><p>&nbsp;</p></td>
+												</tr>
+										</table>
+									</div>
+							</li>
+						</ul>
+							</dd>
+							<dd>
+								<ul class="ui-list ui-list-pure ui-border-tb">
+							<li class="ui-border-t ui-rap-btngroupp ui-txt-sub">
+									<a href="#" class="button ui-btn ui-btn-default">全部50</a><a href="#" class="button ui-btn ui-btn-default">未回复20</a><a href="#" class="button ui-btn ui-btn-default">未读5</a><a href="#" class="button ui-btn ui-btn-default">低分0</a>
+							</li>
+							<li class="ui-border-t">
+									<p><label class="ui-label-s">&nbsp;4.5&nbsp;</label>&nbsp;&nbsp;<span>欧阳***</span><span class="ui-rap-data">2015-11-19</span></p>
+									<div class="ui-txt-sub ui-rap-tit">
+									这本书太赞了，每次看都有不一样的体会和感悟，超级喜欢！期待大结局。这本书太赞了，每次看都有不一样的体会和感悟，超级喜欢！期待大结局。</div>
+									<div class="ui-rap-reply ui-txt-sub ui-txt-info">礼仪师回复：谢谢您给的好评。</div>
+									<div class="ui-txt-info  ui-rap-tit02"><span class="c_alizarin"><i class="ui-txt-tips">¥</i>&nbsp;<i>500.00</i></span></div>
+							</li>
+							<li class="ui-border-t">
+									<p><label class="ui-label-s">&nbsp;4.5&nbsp;</label>&nbsp;&nbsp;<span>欧阳***</span><span class="ui-rap-data">2015-11-19</span></p>
+									<div class="ui-txt-sub ui-rap-tit">
+									这本书太赞了，每次看都有不一样的体会和感悟，超级喜欢！期待大结局。这本书太赞了，每次看都有不一样的体会和感悟，超级喜欢！期待大结局。</div>
+									<div class="ui-rap-reply ui-txt-sub ui-txt-info">礼仪师回复：谢谢您给的好评。</div>
+									<div class="ui-txt-info  ui-rap-tit02"><span class="c_alizarin"><i class="ui-txt-tips">¥</i>&nbsp;<i>500.00</i></span></div>
+							</li>
+							<li class="ui-border-t">
+									<p><label class="ui-label-s">&nbsp;4.5&nbsp;</label>&nbsp;&nbsp;<span>欧阳***</span><span class="ui-rap-data">2015-11-19</span></p>
+									<div class="ui-txt-sub ui-rap-tit">
+									这本书太赞了，每次看都有不一样的体会和感悟，超级喜欢！期待大结局。这本书太赞了，每次看都有不一样的体会和感悟，超级喜欢！期待大结局。</div>
+									<div class="ui-rap-reply ui-txt-sub ui-txt-info">礼仪师回复：谢谢您给的好评。</div>
+									<div class="ui-txt-info  ui-rap-tit02"><span class="c_alizarin"><i class="ui-txt-tips">¥</i>&nbsp;<i>500.00</i></span></div>
+							</li>
+							<li class="ui-border-t">
+									<p><label class="ui-label-s">&nbsp;4.5&nbsp;</label>&nbsp;&nbsp;<span>欧阳***</span><span class="ui-rap-data">2015-11-19</span></p>
+									<div class="ui-txt-sub ui-rap-tit">
+									这本书太赞了，每次看都有不一样的体会和感悟，超级喜欢！期待大结局。这本书太赞了，每次看都有不一样的体会和感悟，超级喜欢！期待大结局。</div>
+									<div class="ui-rap-reply ui-txt-sub ui-txt-info">礼仪师回复：谢谢您给的好评。</div>
+									<div class="ui-txt-info  ui-rap-tit02"><span class="c_alizarin"><i class="ui-txt-tips">¥</i>&nbsp;<i>500.00</i></span></div>
+							</li>
+							<li class="ui-border-t">
+									<p><label class="ui-label-s">&nbsp;4.5&nbsp;</label>&nbsp;&nbsp;<span>欧阳***</span><span class="ui-rap-data">2015-11-19</span></p>
+									<div class="ui-txt-sub ui-rap-tit">
+									这本书太赞了，每次看都有不一样的体会和感悟，超级喜欢！期待大结局。这本书太赞了，每次看都有不一样的体会和感悟，超级喜欢！期待大结局。</div>
+									<div class="ui-rap-reply ui-txt-sub ui-txt-info">礼仪师回复：谢谢您给的好评。</div>
+									<div class="ui-txt-info  ui-rap-tit02"><span class="c_alizarin"><i class="ui-txt-tips">¥</i>&nbsp;<i>500.00</i></span></div>
+							</li>
+					</ul>
+					<div class="ui-loading-wrap"> 
+					 <p>加载中</p> 
+					 <i class="ui-loading"></i> 
+					</div>
+							</dd>
+						</dl>
+					</div>
+					<script>
+					var taseti=$('#etiquetteDetails .ui-tab-nav li');
+					var tasconeti=$('#etiquetteDetails .ui-tab-dir dd');
+						taseti.each(function(index) {
+							$(this).bind('tap', function() {
+							taseti.removeClass('current');
+							tasconeti.removeClass('current');
+							$(this).addClass('current');
+							$("#etiquetteDetails .ui-tab-dir > dd:eq("+index+")").addClass("current");
+							});
+						});
+					</script>
+				</div> 
+			</div> 
+	 </div> 
+	 <!--end-->
+	 <!--///////////////////////登录////////////////////////////////-->  
+   <div class="view"> 
+      <header class="ui-header ui-header-positive ui-pulic-header"> 
+        <a href="#main" class="ui-href-l"data-transition="slide-left"><i class="ui-icon-prev"><span>取消</span></i></a>
+        <h2>登录</h2>
+        <a href="#registerpage" class="ui-href">注册</a>
+      </header>  
+      <div class="pages"> 
+        <div class="panel active" id="loginpage">
+          <div class="ui-btn-wrap">
+            <div class="ui-form-login">
+              <form action="#">
+                <div class="ui-form-item ui-form-item-pure ui-border-b ui-form">
+                    <input type="text" placeholder="手机号">
+                </div>
+                <div class="ui-form-item ui-form-item-pure ui-border-b ui-form">
+                    <input type="text" placeholder="密码">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="ui-btn-wrap ui-btn-skip"><a href="#main" class="ui-btn-lg ui-btn-cbgreen">登&nbsp;&nbsp;录</a></div>
+          <div class="ui-btn-wrap ui-login-tit">
+            <p class="ui-txt-sub"><a href="#forgetpassword" class="ui-login-left">忘记密码？</a><a href="#registerpage" class="ui-login-right">短信验证码登录</a></p>
+            <h5 class="ui-txt-muted">点击登录后，表示您同意<i class="c_turquoise">《千柏渡免责声明》</i></h5>
+
+          </div>
+        </div> 
+      </div> 
+   </div>  
+   <!--end-->
+   <!--///////////////////////注册////////////////////////////////-->  
+   <div class="view"> 
+      <header class="ui-header ui-header-positive ui-pulic-header"> 
+        <a href="#main" class="ui-href-l"data-transition="slide-left"><i class="ui-icon-prev"><span>取消</span></i></a>
+        <h2>注册</h2> 
+      </header>  
+      <div class="pages"> 
+        <div class="panel active" id="registerpage">
+          <div class="ui-btn-wrap">
+            <div class="ui-form-login">
+              <form action="#">
+                <div class="ui-form-item ui-form-item-l ui-border-b ui-login-font ui-form">
+                  <label class="ui-border-r" style="width:62px;">手机号</label>
+                  <input type="text" placeholder="未注册将自动创建千柏渡账号" style=" padding-left:75px;">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="ui-btn-wrap ui-btn-skip"><a href="#registercode" class="ui-btn-lg ui-btn-cbgreen">获取手机验证码</a></div>
+          <div class="ui-btn-wrap ui-login-tit">
+            <h5 class="ui-txt-muted">点击登录后，表示您同意<i class="c_turquoise">《千柏渡免责声明》</i></h5>
+          </div>
+        </div> 
+      </div> 
+   </div>  
+   <!--end-->
+   <!--///////////////////////注册验证码////////////////////////////////-->  
+   <div class="view"> 
+      <header class="ui-header ui-header-positive ui-pulic-header"> 
+        <a href="#registerpage" class="ui-href-l"data-transition="slide-left"><i class="ui-icon-prev"><span>取消</span></i></a>
+        <h2>注册</h2> 
+      </header>  
+      <div class="pages"> 
+        <div class="panel active" id="registercode">
+          <div class="ui-whitespace ui-register-center">
+            <p class="ui-txt-info">已发送短信验证码到</p>
+            <h1 class="ui-txt-f32">+86&nbsp;159&nbsp;6710&nbsp;0406</h1>
+          </div>
+          <div class="ui-btn-wrap">
+            <div class="ui-form-login">
+              <form action="#">
+                <div class="ui-form-item ui-form-item-pure ui-border-b ui-form">
+                    <input type="text" placeholder="6位数验证码">
+                </div>
+                <div class="ui-form-item ui-form-item-r ui-border-b ui-login-font ui-form">
+                  <input type="text" placeholder="推荐人邀请码">
+                  <!-- 若按钮不可点击则添加 disabled 类 -->
+                  <button type="button" class="ui-border-l">扫一扫</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="ui-btn-wrap ui-login-tit">
+            <p class="ui-txt-info">接收短信大概需要35秒</p>
+          </div>
+          <div class="ui-btn-wrap ui-btn-skip"><a href="#registerpassword" class="ui-btn-lg ui-btn-cbgreen">下一步</a></div>
+          <div class="ui-btn-wrap ui-login-tit"><h2><a href="#code_qa" data-transition="up"><i class="ui-ico-help ui-text-f20 c_turquoise"></i>&nbsp;<span>如何获得邀请码</span></a></h2></div>
+        </div> 
+      </div> 
+   </div>  
+   <!--end-->
+   <!--///////////////////////注册密码////////////////////////////////-->  
+   <div class="view"> 
+      <header class="ui-header ui-header-positive ui-pulic-header"> 
+        <a href="#registercode" class="ui-href-l"data-transition="slide-left"><i class="ui-icon-prev"><span>取消</span></i></a>
+        <h2>注册</h2> 
+      </header>  
+      <div class="pages"> 
+        <div class="panel active" id="registerpassword">
+          <div class="ui-btn-wrap">
+            <div class="ui-form-login">
+              <form action="#">
+                <div class="ui-form-item ui-form-item-pure ui-border-b ui-form">
+                    <input type="text" placeholder="请输入密码（长度在6-32个字符之间）">
+                </div>
+                <div class="ui-form-item ui-form-item-pure ui-border-b ui-form">
+                    <input type="text" placeholder="请再次输入密码">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="ui-btn-wrap ui-btn-skip"><a href="#userpage" class="ui-btn-lg ui-btn-cbgreen">注&nbsp;册</a></div>
+          
+        </div> 
+      </div> 
+   </div>  
+   <!--end-->
+   <!--///////////////////////重置密码////////////////////////////////-->  
+   <div class="view"> 
+      <header class="ui-header ui-header-positive ui-pulic-header"> 
+        <a href="#loginpage" class="ui-href-l"data-transition="slide-left"><i class="ui-icon-prev"><span>取消</span></i></a>
+        <h2>重置密码</h2> 
+      </header>  
+      <div class="pages"> 
+        <div class="panel active" id="forgetpassword">
+          <div class="ui-btn-wrap">
+            <div class="ui-form-login">
+              <form action="#">
+                <div class="ui-form-item ui-form-item-pure ui-border-b ui-form">
+                    <input type="text" placeholder="请输入新密码">
+                </div>
+                <div class="ui-form-item ui-form-item-pure ui-border-b ui-form">
+                    <input type="text" placeholder="确认密码">
+                </div>
+                <div class="ui-whitespace ui-fprd-txt ui-txt-info">
+                  验证码已发送到手机15967100406
+                </div>
+                <div class="ui-form-item ui-form-item-r ui-border-b ui-form">
+                  <input type="text" placeholder="验证码">
+                  <!-- 若按钮不可点击则添加 disabled 类 -->
+                  <button type="button" class="ui-border-l c_turquoise">重新发送</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="ui-btn-wrap ui-btn-skip"><a href="#userpage" class="ui-btn-lg ui-btn-cbgreen">完&nbsp;成</a></div>
+          <div class="ui-btn-wrap ui-login-tit">
+            <h5 class="ui-txt-info">如果以上方式还不能找回密码<br>请联系客服：0571-85020446</h5>
+          </div>
+          
+        </div> 
+      </div> 
+   </div>  
+   <!--end-->
+	 <!--///////////////////////如何获得邀请码////////////////////////////////-->  
+	 <div class="view"> 
+			<header class="ui-header ui-header-positive ui-pulic-header"> 
+				<h2>如何获得邀请码</h2>
+				<a href="#registercode" class="ui-href" data-transition="down-reveal">关闭</a>
+			</header>  
+			<div class="pages"> 
+				<div class="panel active" id="code_qa">
+					<div class="ui-code-qa"></div>
+				</div> 
+			</div> 
+	 </div> 
+	 <!--end-->
+	 <!--///////////////////////预约////////////////////////////////-->  
+	 <div class="view"> 
+			<header class="ui-header ui-header-positive ui-pulic-header"> 
+				<a href="#etiquetteDetails" class="ui-href-l"data-transition="slide-left"><i class="ui-icon-prev"><span>返回</span></i></a>
+				<h2>预约</h2>
+			</header>  
+			<div class="pages"> 
+				<div class="panel active" id="subscribe">
+					<div class="ui-form ui-sub-box">
+						<form action="#">
+							<div class="ui-form-item ui-form-item-pure ui-border-b">
+								<input type="text" placeholder="请输入你的姓名">
+							</div>
+							<div class="ui-form-item ui-form-item-pure ui-border-b">
+								<input type="text" placeholder="请输入你的电话号码">
+							</div>
+							<div class="ui-form-item ui-form-item-pure ui-border-b">
+								<input type="text" placeholder="联系地址">
+							</div>
+							<div class="ui-form-item ui-border-b">
+								<div class="ui-select-group">
+									<div class="ui-select">
+										<select>
+											<option selected>&nbsp;月&nbsp;</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+											<option>6</option>
+											<option>7</option>
+											<option>8</option>
+											<option>9</option>
+											<option>10</option>
+											<option>11</option>
+											<option>12</option>
+										</select>
+									</div>
+									<div class="ui-select">
+										<select>
+											<option selected>&nbsp;日&nbsp;</option>
+											<option>01</option>
+											<option>02</option>
+											<option>03</option>
+											<option>04</option>
+											<option>05</option>
+											<option>06</option>
+											<option>07</option>
+											<option>08</option>
+											<option>09</option>
+											<option>10</option>
+											<option>11</option>
+											<option>12</option>
+											<option>13</option>
+											<option>14</option>
+											<option>15</option>
+											<option>16</option>
+											<option>17</option>
+											<option>18</option>
+											<option>19</option>
+											<option>20</option>
+											<option>21</option>
+											<option>22</option>
+											<option>23</option>
+											<option>24</option>
+											<option>25</option>
+											<option>26</option>
+											<option>27</option>
+											<option>28</option>
+											<option>29</option>
+											<option>30</option>
+											<option>31</option>
+										</select>
+									</div>
+									<div class="ui-select">
+										<select>
+											<option selected>时段</option>
+											<option>8：00~10:00</option>
+											<option>11:00·12：00</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="ui-form-item ui-form-item-textarea ui-border-b">
+									<textarea placeholder="备注"></textarea>
+							</div>
+						</form>
+					</div>
+					<div class="ui-btn-wrap"><a href="#subscribesucceed" class="ui-btn-lg ui-btn-cbgreen">下一步</a></div>
+				</div> 
+			</div> 
+	 </div> 
+	 <!--end-->
+	 <!--///////////////////////预约成功////////////////////////////////-->  
+	 <div class="view"> 
+			<header class="ui-header ui-header-positive ui-pulic-header"> 
+				<a href="#subscribe" class="ui-href-l"data-transition="slide-left"><i class="ui-icon-prev"><span>返回</span></i></a>
+				<h2>预约</h2>
+			</header>  
+			<div class="pages"> 
+				<div class="panel active" id="subscribesucceed">
+					<div class="ui-pubil-bg ui-sed-center">
+						<i class="ui-ico-successs ui-txt-f50 c_turquoise"></i>
+						<h1>预约成功</h1>
+						<p class="ui-txt-info">请等待商家确认接单。</p>
+						<div class="ui-order-center">
+							<a href="#listConfirm" class="button ui-btn ui-btn-default ui-order-btn">查看订单详情</a>&nbsp;&nbsp;
+							<a href="#main" class="button ui-btn ui-btn-default ui-order-btn">返回首页</a>
+						</div>
+					</div>
+				</div> 
+			</div> 
+	 </div> 
+	 <!--end-->
+	 <!--///////////////////////选择服务////////////////////////////////-->  
+	 <div class="view"> 
+			<header class="ui-header ui-header-positive ui-pulic-header"> 
+				<a href="#orderpage" class="ui-href-l"data-transition="slide-left"><i class="ui-icon-prev"><span>返回</span></i></a>
+				<h2>选择服务</h2>
+				<a href="#seriveSupplies" class="ui-href">下一步</a>
+			</header>  
+			<div class="pages"> 
+				<div class="panel active" id="selectService">
+					<ul class="ui-list ui-list-text ui-list-radio ui-border-b ui-service-radio">
+						<li class="ui-border-t">
+							<label class="ui-checkbox">
+								<input type="checkbox">
+							</label>
+							<p>灵堂布置</p>
+						</li>
+						<li class="ui-border-t">
+							<label class="ui-checkbox">
+								<input type="checkbox">
+							</label>
+							<p>殡仪服务</p>
+						</li>
+						<li class="ui-border-t">
+							<label class="ui-checkbox">
+								<input type="checkbox">
+							</label>
+							<p>租车服务</p>
+						</li>
+						<li class="ui-border-t">
+							<label class="ui-checkbox">
+								<input type="checkbox">
+							</label>
+							<p>丧宴服务</p>
+						</li>
+					</ul>
+				</div> 
+			</div> 
+	 </div> 
+	 <!--end-->
+	 <!--///////////////////////服务所需用品////////////////////////////////-->  
+	 <div class="view"> 
+			<header class="ui-header ui-header-positive ui-pulic-header"> 
+				<a href="#orderpage" class="ui-href-l" data-transition="slide-left"><i class="ui-icon-prev"><span>返回</span></i></a>
+				<h2>服务所需用品</h2>
+				<a href="#seriveConfirm" class="ui-href">下一步</a>
+			</header>  
+			<div class="pages"> 
+				<div class="panel active" id="seriveSupplies">
+					<h6 class="ui-service-desc ui-txt-muted ui-border-b"><span class="c_alizarin">&lowast;</span>为必选项，用品可以通过&nbsp;&nbsp;<span class="c_turquoise">更改品类</span>&nbsp;&nbsp;来修改品类</h6>
+					<div class="ui-sevice-item">
+						<p class="ui-pubil-desc">灵堂布置</p>
+						<div class="ui-pubil-bg">
+							<table class="ui-bankCard-table ui-txt-sub ui-border-t">
+								<thead>
+									<tr><th colspan="3">子服务项目</th></tr>
+								</thead>
+								<tbody>
+									<tr><td>搭棚</td><td>¥500</td><td class="ui-servicePosition"><i class="ui-txt-f20 c_alizarin ui-weight">&lowast;</i></td></tr>
+									<tr class="ui-disable"><td>摆台</td><td>¥300</td><td class="ui-servicePosition"><a href="#" class="ui-ico-delete ui-txt-f24 c_silver"></a></td></tr>
+								</tbody>
+							</table>
+							<table class="ui-bankCard-table ui-txt-sub">
+								<thead>
+									<tr><th colspan="5">服务所需用品</th></tr>
+								</thead>
+								<tbody>
+									<tr><td>牌位</td><td><input type="text" placeholder="2" class="ipt_01"></td><td>¥500</td><td class="c_turquoise ui-txt-tips"><a href="#category">更改品类</a></td><td><i class="ui-txt-f20 c_alizarin ui-weight">&lowast;</i></td></tr>
+									<tr class="ui-disable"><td>香炉</td><td><input type="text" placeholder="2" class="ipt_01"></td><td>¥500</td><td class="c_turquoise ui-txt-tips"><a href="#category">更改品类</a></td><td><a href="#" class="ui-ico-delete ui-txt-f24 c_silver"></a></td></tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="ui-sevice-item">
+						<p class="ui-pubil-desc">殡仪管服务</p>
+						<div class="ui-pubil-bg">
+							<table class="ui-bankCard-table ui-txt-sub ui-border-t">
+								<thead>
+									<tr><th colspan="3">子服务项目</th></tr>
+								</thead>
+								<tbody>
+									<tr><td>遗体接送</td><td>¥500</td><td class="ui-servicePosition"><i class="ui-txt-f20 c_alizarin ui-weight">&lowast;</i></td></tr>
+									<tr><td>冰箱冷藏</td><td>¥300</td><td class="ui-servicePosition"><a href="#" class="ui-ico-delete ui-txt-f24 c_silver"></a></td></tr></tr>
+								</tbody>
+							</table>
+							<table class="ui-bankCard-table ui-txt-sub">
+								<thead>
+									<tr><th colspan="5">服务所需用品</th></tr>
+								</thead>
+								<tbody>
+									<tr><td>骨灰盒</td><td><input type="text" placeholder="2" class="ipt_01"></td><td>¥500</td><td class="c_turquoise ui-txt-tips"><a href="#category">更改品类</a></td><td><i class="ui-txt-f20 c_alizarin ui-weight">&lowast;</i></td></tr>
+									<tr><td>鲜花</td><td><input type="text" placeholder="2" class="ipt_01"></td><td>¥500</td><td class="c_turquoise ui-txt-tips"><a href="#category">更改品类</a></td><td><a href="#" class="ui-ico-delete ui-txt-f24 c_silver"></a></td></tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+				</div> 
+			</div> 
+	 </div> 
+	 <!--end-->
+	 <!--///////////////////////订单确认////////////////////////////////-->  
+	 <div class="view"> 
+			<header class="ui-header ui-header-positive ui-pulic-header"> 
+				<a href="#seriveSupplies" class="ui-href-l"data-transition="slide-left"><i class="ui-icon-prev"><span>返回</span></i></a>
+				<h2>订单确认</h2>
+				<a href="#confirmation" class="ui-href">下一步</a>
+			</header>  
+			<div class="pages"> 
+				<div class="panel active" id="seriveConfirm">
+					<div class="ui-serive-bg01">
+						<p>预约服务及用品总额：</p>
+						<h1><i class="ui-ico-rnb c_white ui-text-f20"></i>&nbsp;90000</h1>
+					</div>
+					<div class="ui-serive-bg02">
+						<p>完成预约需先支付定金：</p>
+						<h1><i class="ui-ico-rnb c_white"></i>&nbsp;100</h1>
+					</div>
+					<div class="ui-sevice-item">
+						<p class="ui-pubil-desc">灵堂布置</p>
+						<div class="ui-pubil-bg">
+							<table class="ui-bankCard-table ui-txt-sub ui-border-t">
+								<thead>
+									<tr><th colspan="2">子服务项目</th></tr>
+								</thead>
+								<tbody>
+									<tr><td>搭棚</td><td>¥500</td></tr>
+									<tr><td>摆台</td><td>¥300</td></tr>
+								</tbody>
+							</table>
+							<table class="ui-bankCard-table ui-txt-sub">
+								<thead>
+									<tr><th colspan="5">服务所需用品</th></tr>
+								</thead>
+								<tbody>
+									<tr><td>牌位</td><td>2</td><td>¥500</td></tr>
+									<tr><td>香炉</td><td>2</td><td>¥300</td></tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="ui-sevice-item">
+						<p class="ui-pubil-desc">殡仪管服务</p>
+						<div class="ui-pubil-bg">
+							<table class="ui-bankCard-table ui-txt-sub ui-border-t">
+								<thead>
+									<tr><th colspan="3">子服务项目</th></tr>
+								</thead>
+								<tbody>
+									<tr><td>遗体接送</td><td>¥500</td></tr>
+									<tr><td>冰箱冷藏</td><td>¥300</td></tr>
+								</tbody>
+							</table>
+							<table class="ui-bankCard-table ui-txt-sub">
+								<thead>
+									<tr><th colspan="5">服务所需用品</th></tr>
+								</thead>
+								<tbody>
+									<tr><td>骨灰盒</td><td>3</td><td>¥500</td></tr>
+									<tr><td>鲜花</td><td>5</td><td>¥500</td></tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+				</div> 
+			</div> 
+	 </div> 
+	 <!--end-->
+	 <!--///////////////////////选择品类////////////////////////////////-->  
+	 <div class="view"> 
+			<header class="ui-header ui-header-positive ui-pulic-header"> 
+				<a href="#seriveSupplies" class="ui-href-l" data-transition="slide-left"><i class="ui-icon-prev"><span>返回</span></i></a>
+				<h2>选择品类</h2>
+				<a href="#seriveSupplies" class="ui-href">确定</a>
+			</header>  
+			<div class="pages"> 
+				<div class="panel active" id="category">
+					<ul class="ui-list ui-border-tb">
+						<li class="ui-border-t">
+							<div class="ui-list-img">
+								<span style="background-image:url(img/u141.png)"></span>
+							</div>
+							<div class="ui-list-info">
+									<h4>檀木骨灰盒</h4>
+									<p>已售990</p>
+									<p class="c_turquoise">¥8900</p>
+							</div>
+							<label class="ui-radio ui-category-radio" for="radio">
+								<input type="radio" name="radio" checked>
+							</label>
+						</li>
+						<li class="ui-border-t">
+							<div class="ui-list-img">
+									<span style="background-image:url(img/u141.png)"></span>
+							</div>
+							<div class="ui-list-info">
+									<h4>檀木骨灰盒</h4>
+									<p>已售990</p>
+									<p class="c_turquoise">¥8900</p>
+							</div>
+							<label class="ui-radio ui-category-radio" for="radio">
+								<input type="radio" name="radio">
+							</label>
+						</li>
+						<li class="ui-border-t">
+							<div class="ui-list-img">
+									<span style="background-image:url(img/u141.png)"></span>
+							</div>
+							<div class="ui-list-info">
+									<h4>檀木骨灰盒</h4>
+									<p>已售990</p>
+									<p class="c_turquoise">¥8900</p>
+							</div>
+							<label class="ui-radio ui-category-radio" for="radio">
+								<input type="radio" name="radio">
+							</label>
+						</li>
+						<li class="ui-border-t">
+							<div class="ui-list-img">
+									<span style="background-image:url(img/u141.png)"></span>
+							</div>
+							<div class="ui-list-info">
+									<h4>檀木骨灰盒</h4>
+									<p>已售990</p>
+									<p class="c_turquoise">¥8900</p>
+							</div>
+							<label class="ui-radio ui-category-radio" for="radio">
+								<input type="radio" name="radio">
+							</label>
+						</li>
+						<li class="ui-border-t">
+							<div class="ui-list-img">
+									<span style="background-image:url(img/u141.png)"></span>
+							</div>
+							<div class="ui-list-info">
+									<h4>檀木骨灰盒</h4>
+									<p>已售990</p>
+									<p class="c_turquoise">¥8900</p>
+							</div>
+							<label class="ui-radio ui-category-radio" for="radio">
+								<input type="radio" name="radio">
+							</label>
+						</li>
+					</ul>
+
+				</div> 
+			</div> 
+	 </div> 
+	 <!--end-->
+	 <!--///////////////////////确认交易////////////////////////////////-->  
+	 <div class="view"> 
+			<header class="ui-header ui-header-positive ui-pulic-header"> 
+				<a href="#seriveConfirm" class="ui-href-l"data-transition="slide-left"><i class="ui-icon-prev"><span>返回</span></i></a>
+				<h2>确认交易</h2>
+			</header>  
+			<div class="pages"> 
+				<div class="panel active" id="confirmation">
+					<div class="ui-pubil-bg ui-center ui-conf-tit">
+						<h2>千柏渡（预约服务订金）X1 </h2>
+						<h1 class="c_turquoise"><i class="ui-ico-rnb c_turquoise"></i>100</h1>
+					</div>
+					<ul class="ui-list ui-list-text ui-border-tb ui-txt-sub ui-txt-info">
+						<li class="ui-border-t">
+							<h4 class="ui-nowrap ui-txt-info">收款方</h4>
+							<div>杭州汉之网络科技有限公司</div>
+						</li>
+						<li class="ui-border-t">
+							<h4 class="ui-nowrap ui-txt-info">商品</h4>
+							<div>千柏渡（预约服务订金）X1</div>
+						</li>
+					</ul>
+					<ul class="ui-list ui-list-text">
+						<li class="ui-border-t">
+					        <h4 class="ui-nowrap">使用第三方平台支付</h4>
+					        <div class="ui-txt-info c_alizarin"><span class="ui-txt-tips">￥</span>100</div>
+					    </li>
+					</ul>
+					<ul class="ui-list ui-border-tb ui-pay-list">
+						<li class="ui-border-t">
+					        <div class="ui-list-pay">
+					        	<span><i class="ui-ico-zhifubao02 ui-txt-f36 c_peter"></i></span>
+					        </div>
+					        <div class="ui-list-info">
+					            <h4 class="ui-nowrap">支付宝</h4>
+					            <p class="ui-nowrap"><span class="ui-txt-tips">推荐已安装支付宝客户商的用户使用</span></p>
+					        </div>
+					    </li>
+					    <li class="ui-border-t ui-pay-active">
+					        <div class="ui-list-pay">
+					        	<span><i class="ui-ico-weixincopy ui-txt-f36 c_nephritis"></i></span>
+					        </div>
+					        <div class="ui-list-info">
+					            <h4 class="ui-nowrap">微信支付</h4>
+					            <p class="ui-nowrap ui-txt-tips"><span class="ui-txt-tips">推荐已安装微信客户商的用户使用</span></p>
+					        </div>
+					    </li>
+					</ul>
+					<div class="ui-btn-wrap ui-btn-pay">
+						<button class="ui-btn-lg ui-btn-cbgreen">
+								立即支付
+						</button>
+					</div>
+
+				</div> 
+			</div> 
+	 </div> 
+	 <!--end-->
+	 <!--////////////////////////选墓////////////////////////////////-->  
+	 <div class="view"> 
+			<header class="ui-header ui-header-positive ui-pulic-header"> 
+				<a href="#location" class="ui-newstips locat-bg"data-transition="up">
+			        <span class="ui-ico ui-locat-icon c_white">
+			        </span>
+			        <div id="mapid">杭州市 西湖区 文三路90号 创新大厦B406</div>
+			        <span class="ui-ico ui-ico-down c_white"></span>
+			    </a>
+			</header>
+			<div class="ui-form">
+				<form action="#">
+					<div class="ui-form-item ui-border-b">
+						<div class="ui-select-group ui-tomb-select">
+							<div class="ui-select">
+								<select>
+									<option selected>排序</option>
+									<option >按销量</option>
+									<option>按评价</option>
+									<option>按距离</option>
+									<option>按规模</option>
+									<option>按价格</option>
+								</select>
+							</div>
+							<div class="ui-select">
+								<select>
+									<option selected>全部类型</option>
+									<option >经营性公墓</option>
+									<option>公益性公墓</option>
+									<option>佛门格位</option>
+									<option>骨灰塔莲位</option>
+								</select>
+							</div>
+							<div class="ui-select">
+								<select>
+									<option selected>优惠类型</option>
+									<option >新用户优惠</option>
+									<option>可使用代金券</option>
+									<option>限时优惠</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="pages"> 
+			 <div class="panel active" id="tombpage">
+					
+					<ul class="ui-list ui-border-tb ui-order-b ui-tomb-skip">
+						<li class="ui-border-t">
+							<div class="ui-list-img">
+									<span style="background-image:url(img/axy.png)"></span>
+							</div>
+							<div class="ui-list-info">
+								<h4 class="ui-nowrap">浙江安贤园</h4>
+								<p><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i></p>
+								<p class="ui-txt-info">墓地均价:<i class="ui-text-f16 c_turquoise">12000</i>&nbsp;元</p>
+							</div>
+						</li>
+						<li class="ui-border-t ui-order-padding">
+							<p class="ui-tomb-phone"><i class="ui-ico-mapsmall"></i>&nbsp;浙江省杭州市半山水洪庙2-1</p>
+							<div class="ui-tomb-p"><a href="#" data-transition="slide-left"><i class="ui-ico-history c_turquoise"></i><p class="ui-txt-tips">免费预约</p></a></div>
+						</li>
+					</ul>
+					<ul class="ui-list ui-border-tb ui-order-b ui-tomb-skip">
+						<li class="ui-border-t">
+							<div class="ui-list-img">
+									<span style="background-image:url(img/bhg.png)"></span>
+							</div>
+							<div class="ui-list-info">
+								<h4 class="ui-nowrap">上海滨海古园</h4>
+								<p><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i></p>
+								<p class="ui-txt-info">墓地均价:<i class="ui-text-f16 c_turquoise">13500</i>&nbsp;元</p>
+							</div>
+						</li>
+						<li class="ui-border-t ui-order-padding">
+							<p class="ui-tomb-phone"><i class="ui-ico-mapsmall"></i>&nbsp;上海市 奉贤区 五四农场海贤区五四农场贤区五四农场古路755号</p>
+							<div class="ui-tomb-p"><a href="#" data-transition="slide-left"><i class="ui-ico-history c_turquoise"></i><p class="ui-txt-tips">免费预约</p></a></div>
+						</li>
+					</ul>
+					<ul class="ui-list ui-border-tb ui-order-b ui-tomb-skip">
+						<li class="ui-border-t">
+							<div class="ui-list-img">
+									<span style="background-image:url(img/hly.png)"></span>
+							</div>
+							<div class="ui-list-info">
+								<h4 class="ui-nowrap">上海汇龙园</h4>
+								<p><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i></p>
+								<p class="ui-txt-info">墓地均价:<i class="ui-text-f16 c_turquoise">16000</i>&nbsp;元</p>
+							</div>
+						</li>
+						<li class="ui-border-t ui-order-padding">
+							<p class="ui-tomb-phone"><i class="ui-ico-mapsmall"></i>&nbsp;上海市 浦东新区 军港公路388号</p>
+							<div class="ui-tomb-p"><a href="#" data-transition="slide-left"><i class="ui-ico-history c_turquoise"></i><p class="ui-txt-tips">免费预约</p></a></div>
+						</li>
+					</ul>
+					<ul class="ui-list ui-border-tb ui-order-b ui-tomb-skip">
+							<li class="ui-border-t">
+									<div class="ui-list-img">
+											<span style="background-image:url(img/hly.png)"></span>
+									</div>
+									<div class="ui-list-info">
+											<h4 class="ui-nowrap">上海汇龙园</h4>
+											<p><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i></p>
+											<p class="ui-txt-info">墓地均价:<i class="ui-text-f16 c_turquoise">16000</i>&nbsp;元</p>
+									</div>
+							</li>
+							<li class="ui-border-t ui-order-padding">
+									<p class="ui-tomb-phone"><i class="ui-ico-mapsmall"></i>&nbsp;上海市 浦东新区 军港公路388号</p>
+									<div class="ui-tomb-p"><a href="#" data-transition="slide-left"><i class="ui-ico-history c_turquoise"></i><p class="ui-txt-tips">免费预约</p></a></div>
+							</li>
+					</ul>
+					<ul class="ui-list ui-border-tb ui-order-b ui-tomb-skip">
+							<li class="ui-border-t">
+									<div class="ui-list-img">
+											<span style="background-image:url(img/hly.png)"></span>
+									</div>
+									<div class="ui-list-info">
+											<h4 class="ui-nowrap">上海汇龙园</h4>
+											<p><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i></p>
+											<p class="ui-txt-info">墓地均价:<i class="ui-text-f16 c_turquoise">16000</i>&nbsp;元</p>
+									</div>
+							</li>
+							<li class="ui-border-t ui-order-padding">
+									<p class="ui-tomb-phone"><i class="ui-ico-mapsmall"></i>&nbsp;上海市 浦东新区 军港公路388号</p>
+									<div class="ui-tomb-p"><a href="#" data-transition="slide-left"><i class="ui-ico-history c_turquoise"></i><p class="ui-txt-tips">免费预约</p></a></div>
+							</li>
+					</ul>
+					<div class="ui-loading-wrap">
+						<p>加载中</p>
+						<i class="ui-loading"></i>
+					</div>
+					<!--tomb order-->
+					<div id="tomborder" style="display:none;">
+						<form>
+							<input type="text" placeholder="您的称呼" class="pressed">
+							<input type="text" placeholder="您的电话号码" class="pressed">
+						</form>    
+					</div>
+					<!--end tomb order-->
+			 </div> 
+			</div> 
+			<footer class="ui-footer ui-footer-btn ui-public-footer"> 
+			 <ul class="ui-tiled ui-border-t ui-txt-tips"> 
+				<li class="ui-footer-info"><a href="#main"><i class="ui-ico-pressed"></i><span>礼仪师</span></a></li> 
+				<li class="ui-footer-info ui-footer-active"><a href="#tombpage"><i class="ui-ico-project"></i><span>选墓</span></a></li>
+				<li class="ui-footer-info"><a href="#findpage"><i class="ui-ico-browse"></i><span>发现</span></a></li>
+				<li class="ui-footer-info"><a href="#orderpage"><i class="ui-ico-orderman"></i><span>订单</span></a></li> 
+				<li class="ui-footer-info"><a href="#userpage"><i class="ui-ico-my"></i><span>我的</span></a></li> 
+			 </ul> 
+			</footer>
+	 </div> 
+	 <!--end-->
+	 <!--////////////////////////陵园详细页////////////////////////////////-->  
+	 <div class="view"> 
+			<header class="ui-header ui-header-positive ui-pulic-header"> 
+				<a href="#tombpage" class="ui-href-l" data-transition="slide-left"><i class="ui-icon-prev"><span>返回</span></i></a>
+				<h2 class="ui-nowrap ui-whitespace">安贤园</h2>
+			</header>  
+			<div class="pages"> 
+			 <div class="panel active" id="cemeteryDetail">
+				<div class="ui-tomb-ad"><span style="background-image:url(img/img01.jpg)"></span></div>
+					<ul class="ui-list ui-border-tb ui-order-b">
+						<li>
+							<div class="ui-avatar">
+								<span style="background-image:url(img/img_cemetery.jpg)"></span>
+							</div>
+							<div class="ui-list-info">
+								<h4 class="ui-tomb-tit">浙江安贤园<label class="ui-label-s">经</label><label class="ui-label-s ui-tomb-green c_turquoise">人</label><label class="ui-label-s ui-tomb-orange c_orange">合</label></h4>
+								<p><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i><i class="ui-ico-evaluatebig c_alizarin"></i></p>
+								<p class="ui-nowrap"><i class="ui-ico-mapsmall"></i>&nbsp;浙江省杭州市半山水洪庙2-1</p>
+							</div>
+						</li>
+						<li class="ui-border-t">
+							<div class="ui-list-info">
+								<div class="ui-nowrap-multi" id="tombShowbox">
+									浙江安贤园位于杭州绕城半山出口附近，于1999年由浙江省民政厅批准创办，占地面积1000余亩。
+									安贤园由文化园、纪念园、忠孝园和敬天园四大园区组成，以人文纪念为主题，集纪念、游览、教育、安葬四大功能为一体。
+									安贤园目前拥有树葬、草坪葬、花坛葬、壁葬等多种生态葬式及体现人文与景观相结合、纪念与生态为一体的商品墓、艺术景观墓等安葬方式。园内安放着司徒雷登、诸乐三等文化名人及张闻天、王伟等革命先烈。
+								</div>
+								<div class="ui-tomb-pull ui-list-info"><i id="tombIchange" class="ui-ico ui-ico-down ui-txt-f24 c_silver"></i></div>
+							</div>  
+						</li>
+					</ul>
+					<script>
+						$(".ui-tomb-pull").on('tap',function(){
+							if ($(this).hasClass('active')){
+							$(this).removeClass('active')
+							$("#tombShowbox").addClass("ui-nowrap-multi");
+							$("#tombIchange").addClass("ui-ico-down");
+							$("#tombIchange").removeClass("ui-ico-up");
+							}
+							else{
+							$(this).addClass('active')
+							$("#tombShowbox").removeClass("ui-nowrap-multi");
+							$("#tombIchange").removeClass("ui-ico-down");
+							$("#tombIchange").addClass("ui-ico-up");
+							}
+							
+						})
+					</script>
+					<ul class="ui-list ui-border-tb ui-order-b">
+						<li>
+							<div class="ui-list-img">
+									<span style="background-image:url(img/mu.png)"></span>
+							</div>
+							<div class="ui-list-info">
+								<h4 class="ui-nowrap">百合苑24区A</h4>
+								<p class="ui-txt-info">朝向：正东方</p>
+								<p>价格（双穴）:<span class="ui-text-f16 c_turquoise">130000</span>&nbsp;起</p>
+							</div>
+						</li>
+						<li class="ui-border-t ui-order-padding">
+								<p class="ui-tomb-phone">规格(长x宽x高):138cm&nbsp;x&nbsp;63cm&nbsp;x&nbsp;105cm<br>
+								立碑墓起价13000元，预约看墓享折扣。
+								</p>
+							<div class="ui-tomb-p"><a href="#" data-transition="slide-left"><i class="ui-ico-history c_turquoise"></i></a></div>
+						</li>
+					</ul>
+					<ul class="ui-list ui-border-tb ui-order-b">
+						<li>
+							<div class="ui-list-img">
+									<span style="background-image:url(img/mu2.png)"></span>
+							</div>
+							<div class="ui-list-info">
+								<h4 class="ui-nowrap">福安苑4区C</h4>
+								<p class="ui-txt-info">朝向：正东方</p>
+								<p>价格（双穴）:<span class="ui-text-f16 c_turquoise">120000</span>&nbsp;起</p>
+							</div>
+						</li>
+						<li class="ui-border-t ui-order-padding">
+							<p class="ui-tomb-phone">规格(长x宽x高):138cm&nbsp;x&nbsp;63cm&nbsp;x&nbsp;105cm<br>
+							立碑墓起价13000元，预约看墓享折扣。
+							</p>
+							<div class="ui-tomb-p"><a href="#" data-transition="slide-left"><i class="ui-ico-history c_turquoise"></i></a></div>
+						</li>
+					</ul>
+					<ul class="ui-list ui-border-tb ui-order-b">
+						<li>
+							<div class="ui-list-img">
+									<span style="background-image:url(img/mu3.png)"></span>
+							</div>
+							<div class="ui-list-info">
+								<h4 class="ui-nowrap">福寿苑2区B</h4>
+								<p class="ui-txt-info">朝向：正南方</p>
+								<p>价格（可三穴）:<span class="ui-text-f16 c_turquoise">160000</span>&nbsp;起</p>
+							</div>
+						</li>
+						<li class="ui-border-t ui-order-padding">
+								<p class="ui-tomb-phone">规格(长x宽x高):138cm&nbsp;x&nbsp;63cm&nbsp;x&nbsp;105cm<br>
+								立碑墓起价13000元，预约看墓享折扣。
+								</p>
+							<div class="ui-tomb-p"><a href="#" data-transition="slide-left"><i class="ui-ico-history c_turquoise"></i></a></div>
+						</li>
+					</ul>
+					<div class="ui-loading-wrap">
+						<p>加载中</p>
+						<i class="ui-loading"></i>
+					</div>
+					<!--tomb order-->
+					<div id="tomborder" style="display:none;">
+						<form>
+							<input type="text" placeholder="您的称呼" class="pressed">
+							<input type="text" placeholder="您的电话号码" class="pressed">
+						</form>    
+					</div>
+					<!--end tomb order-->
+			 </div> 
+			</div> 
+	 </div> 
+	 <!--end-->
+	 <script>
+	 /*=====tomb order=====*/
+		$('.ui-tomb-p').bind('tap',function(e){
+			$.afui.popup( {
+			 title:"<span style=\" font-size:20px; font-weight:normal;\">免费预约</span>",
+			 message:$("#tomborder").html(),
+			 cancelText:"取消",
+			 cancelCallback: function(){console.log("取消当前操作");},
+			 doneText:"确定",
+			 doneCallback: function(){console.log("确认预约服务");},
+			 cancelOnly:false
+			 });
+		});
+			
+	 </script>
+	
+ <!--////////////////////////发现////////////////////////////////--> 
+	 <div class="view"> 
+		<header class="ui-header ui-header-positive"> 
+		 <h2>发现</h2> 
+		</header> 
+		<div class="pages"> 
+		 <div class="panel active" id="findpage"> 
+			<section class="ui-container">
+					<div class="demo-item">
+							<ul class="ui-list ui-list-text ui-list-link ui-border-tb ui-public-i">
+									<li class="ui-border-t">
+											<i class="ui-ico-punch ui-icon-f24 c_carrot "></i>
+											<h4 class="ui-nowrap">生成讣告</h4>
+									</li>
+							</ul>
+					</div>
+					<div class="demo-item">
+						<p>&nbsp;</p>
+						<ul class="ui-list ui-list-text ui-list-link ui-border-tb ui-public-i">
+							<li class="ui-border-t">
+								<i class="ui-ico-laptopphone ui-icon-f24 c_nephritis"></i>
+								<h4 class="ui-nowrap">在线追思</h4>
+							</li>
+						</ul>
+					</div>
+					<div class="demo-item">
+							<p>&nbsp;</p>
+							<ul class="ui-list ui-list-text ui-list-link ui-border-tb ui-public-i">
+									<li class="ui-border-t">
+											<i class="ui-ico-heartpulse ui-icon-f24 c_alizarin"></i>
+											<h4 class="ui-nowrap">纪念馆</h4>
+									</li>
+									<li class="ui-border-t">
+											<i class="ui-ico-memorial ui-icon-f24 c_peter"></i>
+											<h4 class="ui-nowrap">网祭服务</h4>
+									</li>
+							</ul>
+					</div>  
+				</section>  
+		 </div> 
+		 <!--li skip to new pages-->
+		 <script language="javascript" type="application/javascript">
+			$('#msg-list ul li').on('click', function() {
+			$.afui.loadContent("#msg-dir",false,false,"left");
+			});
+	 </script> 
+		</div> 
+		<footer class="ui-footer ui-footer-btn ui-public-footer"> 
+		 <ul class="ui-tiled ui-border-t ui-txt-tips"> 
+			<li class="ui-footer-info"><a href="#main"><i class="ui-ico-pressed"></i><span>礼仪师</span></a></li> 
+			<li class="ui-footer-info"><a href="#tombpage"><i class="ui-ico-project"></i><span>选墓</span></a></li> 
+			<li class="ui-footer-info ui-footer-active"><a href="#findpage"><i class="ui-ico-browse"></i><span>发现</span></a></li> 
+			<li class="ui-footer-info  "><a href="#orderpage"><i class="ui-ico-orderman"></i><span>订单</span></a></li> 
+			<li class="ui-footer-info"><a href="#userpage"><i class="ui-ico-my"></i><span>我的</span></a></li> 
+		 </ul> 
+		</footer>
+	 </div> 
+	 
+<!--////////////////////////我的////////////////////////////////-->  
+	 <div class="view"> 
+		 <header class="ui-header ui-header-positive"> 
+		 <h2>我的</h2> 
+		</header>  
+		<div class="pages"> 
+		 <div class="panel active" id="userpage"> 
+			<section class="ui-container">
+					<div class="demo-item">
+							<ul class="ui-list ui-list-link ui-border-tb ui-public-accout ui-info-top">
+								<li>
+									<div class="ui-avatar">
+											<span style="background-image:url(img/u141.png);"></span>
+									</div>
+									<div class="ui-list-info ui-border-t">
+											<h4 class="ui-nowrap">上官菲菲&nbsp;&nbsp;<label class="ui-label-s">普通会员</label></h4>
+											<p class="ui-nowrap ui-txt-sub">13632145897</p>
+									</div>
+								</li>
+							</ul>
+							<ul class="ui-list ui-list-link ui-border-tb ui-public-accout02 ui-info-top">
+								<li>
+									<div class="ui-avatar">
+										<span></span>
+									</div>
+									<div class="ui-list-info ui-border-t">
+										<h4 class="ui-nowrap">登录/注册</h4>
+										<p class="ui-nowrap ui-txt-sub">登录后可以进行更多的操作</p>
+									</div>
+								</li>
+							</ul>
+							<ul class="ui-tiled ui-user-up ui-border-b">
+									<li>
+										<a href="#">
+												<i class="ui-ico-recharge c_carrot"></i>&nbsp;
+												<h4 class="ui-nowrap">余额：0.00元</h4>
+										</a>
+									</li>
+									<li>
+										<a href="#codepage">
+											<i class="ui-ico-code c_turquoise"></i>&nbsp;
+											<h4 class="ui-nowrap">我的二维码</h4>
+										</a>
+									</li>
+							</ul>
+					</div>
+					<div class="demo-item">
+							<p>&nbsp;</p>
+							<ul class="ui-list ui-list-text ui-list-link ui-border-tb">
+									<li class="ui-border-t ui-user-address">
+											<i class="ui-ico-home ui-icon-f26 c_alizarin"></i>&nbsp;
+											<h4 class="ui-nowrap">常用地址</h4>
+											<div class="ui-txt-info ui-txt-tips">2个</div>
+									</li>
+									<li class="ui-border-t">
+											<i class="ui-ico-set02 ui-icon-f24 c_belize"></i>&nbsp;&nbsp;
+											<h4 class="ui-nowrap">设置</h4>
+									</li>
+							</ul>
+					</div>
+					<div class="demo-item">
+						<p>&nbsp;</p>
+						<ul class="ui-list ui-tiled ui-border-tb ui-pubilc-exit">
+							<li><a href="" class="ui-info-exit"><h1>退&nbsp;&nbsp;出</h1></a></li>
+						</ul>
+						<p>&nbsp;</p>
+					</div>
+				</section>
+		 </div> 
+		</div> 
+	 <footer class="ui-footer ui-footer-btn ui-public-footer"> 
+		 <ul class="ui-tiled ui-border-t ui-txt-tips"> 
+			<li class="ui-footer-info"><a href="#main"><i class="ui-ico-pressed"></i><span>礼仪师</span></a></li> 
+			<li class="ui-footer-info"><a href="#tombpage"><i class="ui-ico-project"></i><span>选墓</span></a></li> 
+			<li class="ui-footer-info"><a href="#findpage"><i class="ui-ico-browse"></i><span>发现</span></a></li>
+			<li class="ui-footer-info  "><a href="#orderpage"><i class="ui-ico-orderman"></i><span>订单</span></a></li>  
+			<li class="ui-footer-info ui-footer-active"><a href="#userpage"><i class="ui-ico-my"></i><span>我的</span></a></li> 
+		 </ul> 
+		</footer>
+	 </div> 
+	 <!--end userpage-->
+	<!--////////////////////////我的账号////////////////////////////////-->  
+	 <div class="view"> 
+			<header class="ui-header ui-header-positive">
+			 <a href="#userpage" data-transition="slide-left" class="ui-href-l"><i class="ui-icon-prev"><span>返回</span></i></a>
+			 <h2>我的账号</h2>
+			 <a href="#userpage" data-transition="slide-left" class="ui-href">修改</a>
+			</header>   
+			<div class="pages"> 
+			 <div class="panel active" id="userAccout"> 
+				<section class="ui-container">
+						<div class="ui-form ui-border-t">
+								<form action="#">
+										<div class="ui-form-item  ui-border-b">
+												<label>用户昵称</label>
+												<input type="text" placeholder="上官菲菲">
+										</div>
+								</form>
+						</div>  
+					</section>
+			 </div> 
+			</div> 
+	 </div>
+	<!--end userAccout-->
+ <!--////////////////////////订单list////////////////////////////////-->
+<div class="view" id="orderView"> 
+	<header class="ui-header ui-header-positive">
+	 <a href="#userpage" data-transition="slide-left" class="ui-href-l"><i class="ui-icon-prev"><span>返回</span></i></a>  
+	 <h2>订单</h2> 
+	</header> 
+	<div class="ui-tab" >
+		<ul class="ui-tab-nav ui-border-b">
+			<li class="current">一条龙</li>
+			<li>遗体美容</li>
+			<li>其它</li>
+		</ul>
+	</div>
+	<div class="pages"> 
+		<div class="panel" id="orderpage">
+				<!--选项卡-->
+				<div class="ui-tab">
+					<dl class="ui-tab-dir">
+						<dd class="current">
+							<ul class="ui-list ui-border-tb ui-order-b">
+									<li class="ui-border-t ui-order-padding"><h6><span class="ui-nowrap ui-txt-red ui-txt-sub">等待商家确认</span><span class="ui-rap-data ui-txt-tips ui-txt-muted">2015-12-25 16:50</span></h6></h6></li>
+									<li class="ui-border-t ui-order-list">
+										<div class="ui-avatar">
+												<span style="background-image:url(img/u141.png);"></span>
+										</div>
+										<div class="ui-list-info">
+										<h5 class="ui-txt-info">预约中级礼仪师&nbsp;<span class="ui-txt-default">张炎炎</span>&nbsp;于2015年9月7日上门服务。</h5>
+										</div>
+									</li>
+									<li class="ui-order-center">
+										<a href="#" class="button ui-btn ui-btn-default"><i class="ui-ico-alarm c_turquoise"></i>&nbsp;&nbsp;提醒商家接单</a>&nbsp;&nbsp;
+										<a href="#" class="button ui-btn ui-btn-gray ui-btn-cancel">取消订单</a>
+
+									</li>
+									<script>
+							        /*=====delete tips=====*/
+							          $('.ui-btn-cancel').bind('tap',function(e){
+							            $.afui.popup( {
+					            		 title:"<span style=\" font-size:20px; font-weight:normal;\">取消提示</span>",
+							             message:"您确定取消该订单吗？取消后不能恢复。",
+							             cancelText:"取消",
+							             cancelCallback: function(){console.log("取消当前操作");},
+							             doneText:"确定",
+							             doneCallback: function(){console.log("确认取消订单");},
+							             cancelOnly:false
+							             });
+							          });
+							        </script>
+							</ul>
+							<ul class="ui-list ui-border-tb ui-order-b">
+								<li class="ui-border-t ui-order-padding"><h6><span class="ui-nowrap ui-txt-red ui-txt-sub">商家已接单</span><span class="ui-rap-data ui-txt-tips ui-txt-muted">2015-12-25 16:50</span></h6></h6></li>
+								<li class="ui-border-t ui-order-list">
+									<div class="ui-avatar">
+										<span style="background-image:url(img/u141.png);"></span>
+									</div>
+									<div class="ui-list-info">
+										<h5 class="ui-txt-info">预约中级礼仪师&nbsp;<span class="ui-txt-default">张炎炎</span>&nbsp;于2015年9月7日上门服务。</h5>
+									</div>
+								</li>
+								<li class="ui-order-center">
+									<a href="tel:400-800-8800" class="button ui-btn ui-btn-default ui-order-btn"><i class="ui-ico-csad c_turquoise"></i>&nbsp;&nbsp;联系礼仪师</a>&nbsp;&nbsp;
+									<a href="#selectService" class="button ui-btn ui-btn-alizarin ui-order-btn">选择服务</a>
+								</li>
+							</ul>
+							<ul class="ui-list ui-border-tb ui-order-b">
+								<li class="ui-border-t ui-order-padding"><h6><span class="ui-nowrap ui-txt-red ui-txt-sub">未付订金</span><span class="ui-rap-data ui-txt-tips ui-txt-muted">2015-12-25 16:50</span></h6></h6></li>
+								<li class="ui-border-t ui-order-list">
+									<div class="ui-avatar">
+										<span style="background-image:url(img/u141.png);"></span>
+									</div>
+									<div class="ui-list-info">
+										<h5 class="ui-txt-info">预约中级礼仪师&nbsp;<span class="ui-txt-default">张炎炎</span>&nbsp;于2015年9月7日上门服务。</h5>
+									</div>
+								</li>
+								<li class="ui-order-center">
+									<a href="#orderPay" class="button ui-btn ui-btn-default ui-order-btn"><i class="ui-ico-paydefault c_turquoise"></i>&nbsp;去支付</a>&nbsp;&nbsp;
+									<a href="#seriveSupplies" class="button ui-btn ui-btn-default ui-order-btn">修改服务</a>
+								</li>
+							</ul>
+							<ul class="ui-list ui-border-tb ui-order-b">
+								<li class="ui-border-t ui-order-padding"><h6><span class="ui-nowrap ui-txt-red ui-txt-sub">执行中</span><span class="ui-rap-data ui-txt-tips ui-txt-muted">2015-12-25 16:50</span></h6></h6></li>
+								<li class="ui-border-t ui-order-list">
+									<div class="ui-avatar">
+										<span style="background-image:url(img/u141.png);"></span>
+									</div>
+									<div class="ui-list-info">
+										<h5 class="ui-txt-info">预约中级礼仪师&nbsp;<span class="ui-txt-default">张炎炎</span>&nbsp;于2015年9月7日上门服务。</h5>
+									</div>
+								</li>
+								<li class="ui-order-center">
+									<a href="tel:400-800-8800" class="button ui-btn ui-btn-default ui-order-btn"><i class="ui-ico-csad c_turquoise"></i>&nbsp;&nbsp;联系礼仪师</a>
+									</li>
+							</ul>
+							<ul class="ui-list ui-border-tb ui-order-b">
+								<li class="ui-border-t ui-order-padding"><h6><span class="ui-nowrap ui-txt-red ui-txt-sub">执行完成，付全款</span><span class="ui-rap-data ui-txt-tips ui-txt-muted">2015-12-25 16:50</span></h6></h6></li>
+								<li class="ui-border-t ui-order-list">
+									<div class="ui-avatar">
+										<span style="background-image:url(img/u141.png);"></span>
+									</div>
+									<div class="ui-list-info">
+										<h5 class="ui-txt-info">预约中级礼仪师&nbsp;<span class="ui-txt-default">张炎炎</span>&nbsp;于2015年9月7日上门服务。</h5>
+									</div>
+								</li>
+								<li class="ui-order-center">
+									<a href="#orderEvaluate" class="button ui-btn ui-btn-default">去评价</a>&nbsp;&nbsp;
+									<a href="#orderPay" class="button ui-btn ui-btn-default"><i class="ui-ico-paydefault c_turquoise"></i>&nbsp;去付款</a>
+								</li>
+							</ul>
+							<ul class="ui-list ui-border-tb ui-order-b">
+								<li class="ui-border-t ui-order-padding"><h6><span class="ui-nowrap ui-txt-red ui-txt-sub">已完成</span><span class="ui-rap-data ui-txt-tips ui-txt-muted">2015-12-25 16:50</span></h6></h6></li>
+								<li class="ui-border-t ui-order-list">
+									<div class="ui-avatar">
+										<span style="background-image:url(img/u141.png);"></span>
+									</div>
+									<div class="ui-list-info">
+										<h5 class="ui-txt-info">预约中级礼仪师&nbsp;<span class="ui-txt-default">张炎炎</span>&nbsp;于2015年9月7日上门服务。</h5>
+									</div>
+								</li>
+								<li class="ui-order-center ui-whitespace">
+									<a href="#" class="button ui-btn ui-btn-gray ui-order-btn ui-order-delete">删除</a>
+								</li>
+							</ul>
+							<script>
+							        /*=====delete tips=====*/
+							          $('.ui-order-delete').bind('tap',function(e){
+							            $.afui.popup( {
+							              title:"<span style=\" font-size:20px; font-weight:normal;\">删除提示</span>",
+							             message:"您确定删除该订单吗？取消后不能恢复。",
+							             cancelText:"取消",
+							             cancelCallback: function(){console.log("取消当前操作");},
+							             doneText:"确定",
+							             doneCallback: function(){console.log("确认删除订单");},
+							             cancelOnly:false
+							             });
+							          });
+							        </script>
+							<div class="ui-loading-wrap"> 
+							 <p>加载中</p> 
+							 <i class="ui-loading"></i> 
+							</div>
+						</dd>
+						<dd>
+							<ul class="ui-list ui-border-tb ui-order-b">
+									<li class="ui-border-t ui-order-padding"><h6><span class="ui-nowrap ui-txt-red ui-txt-sub">等待商家确认</span><span class="ui-rap-data ui-txt-tips ui-txt-muted">2015-12-25 16:50</span></h6></h6></li>
+									<li class="ui-border-t ui-order-list">
+										<div class="ui-avatar">
+												<span style="background-image:url(img/u141.png);"></span>
+										</div>
+										<div class="ui-list-info">
+										<h5 class="ui-txt-info">预约中级礼仪师&nbsp;<span class="ui-txt-default">张炎炎</span>&nbsp;于2015年9月7日上门服务。</h5>
+										</div>
+									</li>
+									<li class="ui-order-center">
+										<a href="#" class="button ui-btn ui-btn-default"><i class="ui-ico-alarm c_turquoise"></i>&nbsp;&nbsp;提醒商家接单</a>&nbsp;&nbsp;
+										<a href="#" class="button ui-btn ui-btn-gray ui-btn-cancel">取消订单</a>
+
+									</li>
+									<script>
+							        /*=====delete tips=====*/
+							          $('.ui-btn-cancel').bind('tap',function(e){
+							            $.afui.popup( {
+					            		 title:"<span style=\" font-size:20px; font-weight:normal;\">取消提示</span>",
+							             message:"您确定取消该订单吗？取消后不能恢复。",
+							             cancelText:"取消",
+							             cancelCallback: function(){console.log("取消当前操作");},
+							             doneText:"确定",
+							             doneCallback: function(){console.log("确认取消订单");},
+							             cancelOnly:false
+							             });
+							          });
+							        </script>
+							</ul>
+							<ul class="ui-list ui-border-tb ui-order-b">
+								<li class="ui-border-t ui-order-padding"><h6><span class="ui-nowrap ui-txt-red ui-txt-sub">商家已接单</span><span class="ui-rap-data ui-txt-tips ui-txt-muted">2015-12-25 16:50</span></h6></h6></li>
+								<li class="ui-border-t ui-order-list">
+									<div class="ui-avatar">
+										<span style="background-image:url(img/u141.png);"></span>
+									</div>
+									<div class="ui-list-info">
+										<h5 class="ui-txt-info">预约中级礼仪师&nbsp;<span class="ui-txt-default">张炎炎</span>&nbsp;于2015年9月7日上门服务。</h5>
+									</div>
+								</li>
+								<li class="ui-order-center">
+									<a href="tel:400-800-8800" class="button ui-btn ui-btn-default ui-order-btn"><i class="ui-ico-csad c_turquoise"></i>&nbsp;&nbsp;联系礼仪师</a>&nbsp;&nbsp;
+									<a href="#selectService" class="button ui-btn ui-btn-alizarin ui-order-btn">选择服务</a>
+								</li>
+							</ul>
+							<ul class="ui-list ui-border-tb ui-order-b">
+								<li class="ui-border-t ui-order-padding"><h6><span class="ui-nowrap ui-txt-red ui-txt-sub">未付订金</span><span class="ui-rap-data ui-txt-tips ui-txt-muted">2015-12-25 16:50</span></h6></h6></li>
+								<li class="ui-border-t ui-order-list">
+									<div class="ui-avatar">
+										<span style="background-image:url(img/u141.png);"></span>
+									</div>
+									<div class="ui-list-info">
+										<h5 class="ui-txt-info">预约中级礼仪师&nbsp;<span class="ui-txt-default">张炎炎</span>&nbsp;于2015年9月7日上门服务。</h5>
+									</div>
+								</li>
+								<li class="ui-order-center">
+									<a href="#orderPay" class="button ui-btn ui-btn-default ui-order-btn"><i class="ui-ico-csad c_turquoise"></i>&nbsp;&nbsp;去支付</a>&nbsp;&nbsp;
+									<a href="#seriveSupplies" class="button ui-btn ui-btn-default ui-order-btn">修改服务</a>
+								</li>
+							</ul>
+							<ul class="ui-list ui-border-tb ui-order-b">
+								<li class="ui-border-t ui-order-padding"><h6><span class="ui-nowrap ui-txt-red ui-txt-sub">执行中</span><span class="ui-rap-data ui-txt-tips ui-txt-muted">2015-12-25 16:50</span></h6></h6></li>
+								<li class="ui-border-t ui-order-list">
+									<div class="ui-avatar">
+										<span style="background-image:url(img/u141.png);"></span>
+									</div>
+									<div class="ui-list-info">
+										<h5 class="ui-txt-info">预约中级礼仪师&nbsp;<span class="ui-txt-default">张炎炎</span>&nbsp;于2015年9月7日上门服务。</h5>
+									</div>
+								</li>
+								<li class="ui-order-center">
+									<a href="tel:400-800-8800" class="button ui-btn ui-btn-default ui-order-btn"><i class="ui-ico-csad c_turquoise"></i>&nbsp;&nbsp;联系礼仪师</a>
+									</li>
+							</ul>
+							<ul class="ui-list ui-border-tb ui-order-b">
+								<li class="ui-border-t ui-order-padding"><h6><span class="ui-nowrap ui-txt-red ui-txt-sub">执行完成，付全款</span><span class="ui-rap-data ui-txt-tips ui-txt-muted">2015-12-25 16:50</span></h6></h6></li>
+								<li class="ui-border-t ui-order-list">
+									<div class="ui-avatar">
+										<span style="background-image:url(img/u141.png);"></span>
+									</div>
+									<div class="ui-list-info">
+										<h5 class="ui-txt-info">预约中级礼仪师&nbsp;<span class="ui-txt-default">张炎炎</span>&nbsp;于2015年9月7日上门服务。</h5>
+									</div>
+								</li>
+								<li class="ui-order-center">
+									<a href="#orderEvaluate" class="button ui-btn ui-btn-default">去评价</a>&nbsp;&nbsp;
+									<a href="#orderPay" class="button ui-btn ui-btn-default">去付款</a>
+
+								</li>
+							</ul>
+							<ul class="ui-list ui-border-tb ui-order-b">
+								<li class="ui-border-t ui-order-padding"><h6><span class="ui-nowrap ui-txt-red ui-txt-sub">已完成</span><span class="ui-rap-data ui-txt-tips ui-txt-muted">2015-12-25 16:50</span></h6></h6></li>
+								<li class="ui-border-t ui-order-list">
+									<div class="ui-avatar">
+										<span style="background-image:url(img/u141.png);"></span>
+									</div>
+									<div class="ui-list-info">
+										<h5 class="ui-txt-info">预约中级礼仪师&nbsp;<span class="ui-txt-default">张炎炎</span>&nbsp;于2015年9月7日上门服务。</h5>
+									</div>
+								</li>
+								<li class="ui-order-center ui-whitespace">
+									<a href="#" class="button ui-btn ui-btn-gray ui-order-btn ui-order-delete">删除</a>
+								</li>
+							</ul>
+							<script>
+							        /*=====delete tips=====*/
+							          $('.ui-order-delete').bind('tap',function(e){
+							            $.afui.popup( {
+							              title:"<span style=\" font-size:20px; font-weight:normal;\">删除提示</span>",
+							             message:"您确定删除该订单吗？取消后不能恢复。",
+							             cancelText:"取消",
+							             cancelCallback: function(){console.log("取消当前操作");},
+							             doneText:"确定",
+							             doneCallback: function(){console.log("确认删除订单");},
+							             cancelOnly:false
+							             });
+							          });
+							        </script>
+							<div class="ui-loading-wrap"> 
+							 <p>加载中</p> 
+							 <i class="ui-loading"></i> 
+							</div>
+						</dd>
+						<dd>
+							<ul class="ui-list ui-border-tb ui-order-b">
+									<li class="ui-border-t ui-order-padding"><h6><span class="ui-nowrap ui-txt-red ui-txt-sub">等待商家确认</span><span class="ui-rap-data ui-txt-tips ui-txt-muted">2015-12-25 16:50</span></h6></h6></li>
+									<li class="ui-border-t ui-order-list">
+										<div class="ui-avatar">
+												<span style="background-image:url(img/u141.png);"></span>
+										</div>
+										<div class="ui-list-info">
+										<h5 class="ui-txt-info">预约中级礼仪师&nbsp;<span class="ui-txt-default">张炎炎</span>&nbsp;于2015年9月7日上门服务。</h5>
+										</div>
+									</li>
+									<li class="ui-order-center">
+										<a href="#" class="button ui-btn ui-btn-default"><i class="ui-ico-alarm c_turquoise"></i>&nbsp;&nbsp;提醒商家接单</a>&nbsp;&nbsp;
+										<a href="#" class="button ui-btn ui-btn-gray ui-btn-cancel">取消订单</a>
+
+									</li>
+									<script>
+							        /*=====delete tips=====*/
+							          $('.ui-btn-cancel').bind('tap',function(e){
+							            $.afui.popup( {
+					            		 title:"<span style=\" font-size:20px; font-weight:normal;\">取消提示</span>",
+							             message:"您确定取消该订单吗？取消后不能恢复。",
+							             cancelText:"取消",
+							             cancelCallback: function(){console.log("取消当前操作");},
+							             doneText:"确定",
+							             doneCallback: function(){console.log("确认取消订单");},
+							             cancelOnly:false
+							             });
+							          });
+							        </script>
+							</ul>
+							<ul class="ui-list ui-border-tb ui-order-b">
+								<li class="ui-border-t ui-order-padding"><h6><span class="ui-nowrap ui-txt-red ui-txt-sub">商家已接单</span><span class="ui-rap-data ui-txt-tips ui-txt-muted">2015-12-25 16:50</span></h6></h6></li>
+								<li class="ui-border-t ui-order-list">
+									<div class="ui-avatar">
+										<span style="background-image:url(img/u141.png);"></span>
+									</div>
+									<div class="ui-list-info">
+										<h5 class="ui-txt-info">预约中级礼仪师&nbsp;<span class="ui-txt-default">张炎炎</span>&nbsp;于2015年9月7日上门服务。</h5>
+									</div>
+								</li>
+								<li class="ui-order-center">
+									<a href="tel:400-800-8800" class="button ui-btn ui-btn-default ui-order-btn"><i class="ui-ico-csad c_turquoise"></i>&nbsp;&nbsp;联系礼仪师</a>&nbsp;&nbsp;
+									<a href="#selectService" class="button ui-btn ui-btn-alizarin ui-order-btn">选择服务</a>
+								</li>
+							</ul>
+							<ul class="ui-list ui-border-tb ui-order-b">
+								<li class="ui-border-t ui-order-padding"><h6><span class="ui-nowrap ui-txt-red ui-txt-sub">未付订金</span><span class="ui-rap-data ui-txt-tips ui-txt-muted">2015-12-25 16:50</span></h6></h6></li>
+								<li class="ui-border-t ui-order-list">
+									<div class="ui-avatar">
+										<span style="background-image:url(img/u141.png);"></span>
+									</div>
+									<div class="ui-list-info">
+										<h5 class="ui-txt-info">预约中级礼仪师&nbsp;<span class="ui-txt-default">张炎炎</span>&nbsp;于2015年9月7日上门服务。</h5>
+									</div>
+								</li>
+								<li class="ui-order-center">
+									<a href="#orderPay" class="button ui-btn ui-btn-default ui-order-btn"><i class="ui-ico-csad c_turquoise"></i>&nbsp;&nbsp;去支付</a>&nbsp;&nbsp;
+									<a href="#seriveSupplies" class="button ui-btn ui-btn-default ui-order-btn">修改服务</a>
+								</li>
+							</ul>
+							<ul class="ui-list ui-border-tb ui-order-b">
+								<li class="ui-border-t ui-order-padding"><h6><span class="ui-nowrap ui-txt-red ui-txt-sub">执行中</span><span class="ui-rap-data ui-txt-tips ui-txt-muted">2015-12-25 16:50</span></h6></h6></li>
+								<li class="ui-border-t ui-order-list">
+									<div class="ui-avatar">
+										<span style="background-image:url(img/u141.png);"></span>
+									</div>
+									<div class="ui-list-info">
+										<h5 class="ui-txt-info">预约中级礼仪师&nbsp;<span class="ui-txt-default">张炎炎</span>&nbsp;于2015年9月7日上门服务。</h5>
+									</div>
+								</li>
+								<li class="ui-order-center">
+									<a href="tel:400-800-8800" class="button ui-btn ui-btn-default ui-order-btn"><i class="ui-ico-csad c_turquoise"></i>&nbsp;&nbsp;联系礼仪师</a>
+									</li>
+							</ul>
+							<ul class="ui-list ui-border-tb ui-order-b">
+								<li class="ui-border-t ui-order-padding"><h6><span class="ui-nowrap ui-txt-red ui-txt-sub">执行完成，付全款</span><span class="ui-rap-data ui-txt-tips ui-txt-muted">2015-12-25 16:50</span></h6></h6></li>
+								<li class="ui-border-t ui-order-list">
+									<div class="ui-avatar">
+										<span style="background-image:url(img/u141.png);"></span>
+									</div>
+									<div class="ui-list-info">
+										<h5 class="ui-txt-info">预约中级礼仪师&nbsp;<span class="ui-txt-default">张炎炎</span>&nbsp;于2015年9月7日上门服务。</h5>
+									</div>
+								</li>
+								<li class="ui-order-center">
+									<a href="#orderEvaluate" class="button ui-btn ui-btn-default">去评价</a>&nbsp;&nbsp;
+									<a href="#orderPay" class="button ui-btn ui-btn-default">去付款</a>
+
+								</li>
+							</ul>
+							<ul class="ui-list ui-border-tb ui-order-b">
+								<li class="ui-border-t ui-order-padding"><h6><span class="ui-nowrap ui-txt-red ui-txt-sub">已完成</span><span class="ui-rap-data ui-txt-tips ui-txt-muted">2015-12-25 16:50</span></h6></h6></li>
+								<li class="ui-border-t ui-order-list">
+									<div class="ui-avatar">
+										<span style="background-image:url(img/u141.png);"></span>
+									</div>
+									<div class="ui-list-info">
+										<h5 class="ui-txt-info">预约中级礼仪师&nbsp;<span class="ui-txt-default">张炎炎</span>&nbsp;于2015年9月7日上门服务。</h5>
+									</div>
+								</li>
+								<li class="ui-order-center ui-whitespace">
+									<a href="#" class="button ui-btn ui-btn-gray ui-order-btn ui-order-delete">删除</a>
+								</li>
+							</ul>
+							<script>
+							        /*=====delete tips=====*/
+							          $('.ui-order-delete').bind('tap',function(e){
+							            $.afui.popup( {
+							              title:"<span style=\" font-size:20px; font-weight:normal;\">删除提示</span>",
+							             message:"您确定删除该订单吗？取消后不能恢复。",
+							             cancelText:"取消",
+							             cancelCallback: function(){console.log("取消当前操作");},
+							             doneText:"确定",
+							             doneCallback: function(){console.log("确认删除订单");},
+							             cancelOnly:false
+							             });
+							          });
+							        </script>
+							<div class="ui-loading-wrap"> 
+							 <p>加载中</p> 
+							 <i class="ui-loading"></i> 
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<script>
+				var tas=$('#orderView .ui-tab-nav li');
+				var tascon = $('#orderView .ui-tab-dir dd');
+					tas.each(function(index) {
+						$(this).bind('tap', function() {
+						tas.removeClass('current');
+						tascon.removeClass('current');
+						$(this).addClass('current');
+						$("#orderView .ui-tab-dir > dd:eq("+index+")").addClass("current");
+						});
+					});
+				/*=====delete tips=====*/
+				$('.ui-order-delete').bind('tap',function(e){
+					$.afui.popup( {
+					 title:"删除提示",
+					 message:"您确定删除该订单吗？删除后不能恢复。",
+					 cancelText:"取消",
+					 cancelCallback: function(){console.log("取消当前操作");},
+					 doneText:"确定",
+					 doneCallback: function(){console.log("确认删除订单");},
+					 cancelOnly:false
+					 });
+				});
+			</script>
+		</div> 
+	</div> 
+	<footer class="ui-footer ui-footer-btn ui-public-footer"> 
+		<ul class="ui-tiled ui-border-t ui-txt-tips"> 
+			<li class="ui-footer-info"><a href="#main"><i class="ui-ico-pressed"></i><span>礼仪师</span></a></li> 
+			<li class="ui-footer-info "><a href="#tombpage"><i class="ui-ico-project"></i><span>选墓</span></a></li> 
+			<li class="ui-footer-info  "><a href="#findpage"><i class="ui-ico-browse"></i><span>发现</span></a></li>
+			<li class="ui-footer-info  ui-footer-active "><a href="#orderpage"><i class="ui-ico-orderman"></i><span>订单</span></a></li> 
+			<li class="ui-footer-info"><a href="#userpage"><i class="ui-ico-my"></i><span>我的</span></a></li> 
+		</ul> 
+	</footer>
+</div>
+<!---end >
+<!--///////////////////////订单详情////////////////////////////////-->  
+   <div class="view"> 
+      <header class="ui-header ui-header-positive ui-pulic-header"> 
+        <a href="#orderpage" class="ui-href-l"data-transition="slide-left"><i class="ui-icon-prev"><span>返回</span></i></a>
+        <h2>订单详情</h2>
+      </header>  
+      <div class="pages"> 
+        <div class="panel active" id="listConfirm">
+          <div class="ui-orderdetails"><h1>订单状态：预约成功</h1></div>
+          <ul class="ui-list ui-border-b ui-etiquette-pbottom">
+			<li>
+				<div class="ui-avatar">
+					<span style="background-image:url(img/u141.png)"></span>
+				</div>
+				<div class="ui-list-info">
+					<h4 class="ui-nowrap">华颜</h4>
+					<p>高级礼仪师<span class="ui-txt-tips">&nbsp;&nbsp;|&nbsp;&nbsp;56785单</span></p>               
+				</div>
+			</li>
+			<li class="ui-border-t">
+				<div class="ui-list-info">
+					<h5 class="ui-txt-info">服务区域：杭州西湖区、拱墅区</h5>
+					<p>从事殡仪服务已有10年，行业经验丰富。为人细致。</p>
+				</div>
+			</li>
+			<li class="ui-border-t ui-etdd-padding">
+				<div class="ui-etdd-appraise">
+					<p>评价</p>
+					<i class="ui-ico-evaluatebig ui-txt-f32 c_alizarin"></i><i class="ui-ico-evaluatebig ui-txt-f32 c_alizarin"></i><i class="ui-ico-evaluatebig ui-txt-f32 c_alizarin"></i><i class="ui-ico-evaluatebig ui-txt-f32 c_alizarin"></i><i class="ui-ico-evaluatebig ui-txt-f32 c_alizarin"></i>
+				</div>
+				<div class="ui-etdd-p"><a href="tel:800-800-8800" data-transition="slide-left"><i class="ui-ico-csad ui-txt-f36 c_turquoise"></i><p>客服电话</p></a></div>
+			</li>
+		  </ul>
+          <div class="ui-sevice-item">
+            <h2 class="ui-orderdatil-gray">订单明细</h2>
+            <p class="ui-pubil-desc">灵堂布置</p>
+            <div class="ui-pubil-bg">
+              <table class="ui-bankCard-table ui-txt-sub ui-border-t">
+                <thead>
+                  <tr><th colspan="2">子服务项目</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>搭棚</td><td>¥500</td></tr>
+                  <tr><td>摆台</td><td>¥300</td></tr>
+                </tbody>
+              </table>
+              <table class="ui-bankCard-table ui-txt-sub">
+                <thead>
+                  <tr><th colspan="5">服务所需用品</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>牌位</td><td>2</td><td>¥500</td></tr>
+                  <tr class="ui-disable"><td>香炉11</td><td>2</td><td>¥300</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="ui-sevice-item">
+            <p class="ui-pubil-desc">殡仪管服务</p>
+            <div class="ui-pubil-bg">
+              <table class="ui-bankCard-table ui-txt-sub ui-border-t">
+                <thead>
+                  <tr><th colspan="3">子服务项目</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>遗体接送</td><td>¥500</td></tr>
+                  <tr><td>冰箱冷藏</td><td>¥300</td></tr>
+                </tbody>
+              </table>
+              <table class="ui-bankCard-table ui-txt-sub">
+                <thead>
+                  <tr><th colspan="5">服务所需用品</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>骨灰盒</td><td>3</td><td>¥500</td></tr>
+                  <tr><td>鲜花</td><td>5</td><td>¥500</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div> 
+      </div> 
+   </div> 
+   <!--end-->
+<!////////////////////////订单付全款////////////////////////////////-->  
+<div class="view"> 
+	<header class="ui-header ui-header-positive">
+	 <a href="#orderpage" data-transition="slide-left" class="ui-href-l"><i class="ui-icon-prev"><span>返回</span></i></a>  
+	 <h2>订单</h2>
+	</header>  
+	<div class="pages"> 
+	 <div class="panel" id="orderPay">
+		<ul class="ui-list ui-border-tb ui-order-b">
+			<li class="ui-border-t ui-order-padding"><h4>付全款</h4></li>
+			<li class="ui-border-t">
+				<div class="ui-avatar">
+						<span style="background-image:url(img/u141.png);"></span>
+				</div>
+				<div class="ui-list-info">
+				<h4 class="ui-nowrap">陈美丽<span class="ui-txt-tips ui-txt-info">（高级礼仪师）</span></h4>
+					<p class="ui-nowrap">已于2015年9月15日完成服务</p>
+				</div>
+			</li>
+			<li class="ui-border-t">
+				<div class="ui-form-item ui-form-item-show">
+					<label for="#">共需支付：</label>
+					<input type="text" value="9000">
+					<span class="ui-orderpay-yuan">元</span>
+				</div>
+			</li>
+			<li class="ui-border-t">
+				<div class="ui-form-item">
+					<label class="ui-txt-info">抵扣订金：</label>
+					<input type="text" value="9000元">
+				</div>
+			</li>
+			<li class="ui-border-t">
+				<div class="ui-form-item">
+					<label class="ui-txt-info">抵用券：</label>
+					<div class="ui-select ui-order-select">
+						<select>
+							<option>请选择</option>
+							<option selected>无可用抵扣券</option>
+							<option>首单赠送200元代金券</option>
+						</select>
+					</div>
+				</div>
+			</li>
+
+			<li class="ui-border-t ui-order-padding ">
+				<h1>还需支付：8900元</h1>
+			</li>
+			<li class="ui-order-center">
+				<a href="#orderpage" class="button ui-btn ui-btn-default ui-order-gray" data-transition="slide-left">返&nbsp;回</a>&nbsp;&nbsp;
+				<a href="#confirmation" class="button ui-btn ui-btn-default ui-order-btn">去支付</a>
+			</li>
+			<li class="ui-order-right ui-border-t">
+				<a href="#orderpage" class="ui-list-info" data-transition="slide-left">我已线下支付</a>
+			</li>
+		</ul> 
+	 </div> 
+	</div> 
+</div> 
+ <!---end->
+ <!////////////////////////订单评价////////////////////////////////-->  
+<div class="view"> 
+	<header class="ui-header ui-header-positive">
+	 <a href="#orderpage" data-transition="slide-left" class="ui-href-l"><i class="ui-icon-prev"><span>返回</span></i></a>  
+	 <h2>评价</h2>
+	 <a href="#orderpage" class="ui-href">提交</a>
+	</header>  
+	<div class="pages"> 
+		<div class="panel" id="orderEvaluate">
+			<div class="ui-form ui-border-t">
+				<form action="#">
+					<div class="ui-form-item  ui-border-b">
+						<label>响应时间</label>
+						<div class="ui-order-ayout ui-one-star">
+							<i class="ui-ico-evaluatebig ui-txt-f26 c_silver" title="0" val="很差"></i><i class="ui-ico-evaluatebig c_silver ui-txt-f26" title="1" val="一般"></i><i class="ui-ico-evaluatebig c_silver ui-txt-f26 " title="2" val="好"></i><i class="ui-ico-evaluatebig ui-txt-f26 c_silver" title="3" val="很好"></i><i class="ui-ico-evaluatebig ui-txt-f26 c_silver" title="4" val="非常好"></i>
+						</div>
+						<div class="ui-order-shade01 ui-txt-info"></div>
+					</div>
+					<div class="ui-form-item ui-border-b">
+						<label>专业程度</label>
+						<div class="ui-order-ayout ui-two-star"><i class="ui-ico-evaluatebig ui-txt-f26 c_silver" title="0" val="很差"></i><i class="ui-ico-evaluatebig c_silver ui-txt-f26" title="1" val="一般"></i><i class="ui-ico-evaluatebig c_silver ui-txt-f26 " title="2" val="好"></i><i class="ui-ico-evaluatebig ui-txt-f26 c_silver" title="3" val="很好"></i><i class="ui-ico-evaluatebig ui-txt-f26 c_silver" title="4" val="非常好"></i></div>
+						<div class="ui-order-shade02 ui-txt-info"></div>
+					</div>
+					<div class="ui-form-item ui-border-b">
+						<label>服务态度</label>
+						<div class="ui-order-ayout ui-three-star"><i class="ui-ico-evaluatebig ui-txt-f26 c_silver" title="0" val="很差"></i><i class="ui-ico-evaluatebig c_silver ui-txt-f26" title="1" val="一般"></i><i class="ui-ico-evaluatebig c_silver ui-txt-f26 " title="2" val="好"></i><i class="ui-ico-evaluatebig ui-txt-f26 c_silver" title="3" val="很好"></i><i class="ui-ico-evaluatebig ui-txt-f26 c_silver" title="4" val="非常好"></i></div>
+						<div class="ui-order-shade03 ui-txt-info"></div>
+					</div>
+					<div class="ui-form-item ui-form-item-textarea ui-rap-textarea">
+						<textarea placeholder="写点评价吧，对其他小伙伴帮助很大哦" rows="5" class=""></textarea>
+					</div>
+					<div class="ui-form-item ui-order-tit">
+						<p class="ui-txt-muted">还能输入70个字</p>
+					</div>
+					<script>
+						$(function(){
+							$(".ui-one-star i").bind("tap",function(){
+								var i = $(this).attr("title");   //当前选中的星级
+								$(".ui-one-star i").each(function(index){
+									if($(this).hasClass("c_turquoise")){
+									 if(index>=i){
+										$(this).removeClass("c_turquoise");
+										$(this).addClass("c_silver");
+									 }
+									}
+									if(index<=i){
+										$(this).removeClass("c_silver");
+										$(this).addClass("c_turquoise");
+									}                          
+								});
+								$(".ui-order-shade01").html($(this).attr("val"));
+							});
+
+
+							$(".ui-two-star i").bind("tap",function(){
+								var i = $(this).attr("title");   //当前选中的星级
+								$(".ui-two-star i").each(function(index){
+									if($(this).hasClass("c_turquoise")){
+									 if(index>=i){
+										$(this).removeClass("c_turquoise");
+										$(this).addClass("c_silver");
+									 }
+									}
+									if(index<=i){
+										$(this).removeClass("c_silver");
+										$(this).addClass("c_turquoise");
+									}                          
+								});
+								$(".ui-order-shade02").html($(this).attr("val"));
+							})
+
+						$(".ui-three-star i").bind("tap",function(){
+								var i = $(this).attr("title");   //当前选中的星级
+								$(".ui-three-star i").each(function(index){
+									if($(this).hasClass("c_turquoise")){
+									 if(index>=i){
+										$(this).removeClass("c_turquoise");
+										$(this).addClass("c_silver");
+									 }
+									}
+									if(index<=i){
+										$(this).removeClass("c_silver");
+										$(this).addClass("c_turquoise");
+									}                          
+								});
+								$(".ui-order-shade03").html($(this).attr("val"));
+							})
+						});
+						
+					</script>
+				</form>
+			</div> 
+		</div> 
+	</div> 
+</div> 
+ <!---end->
+<!////////////////////////二维码////////////////////////////////-->  
+	 <div class="view"> 
+		<header class="ui-header ui-header-positive">
+		 <a href="#userpage" class="ui-href-l"data-transition="slide-left"><i class="ui-icon-prev"><span>返回</span></i></a>
+		 <h2>二维码</h2> 
+		</header>  
+		<div class="pages"> 
+		 <div class="panel" id="codepage">
+			<section class="ui-container">
+				<div class="ui-center ui-code-box ui-border-b">
+					<div class="ui-avatar-lg">
+						<span style=" background-image:url(img/u141.png);"></span>
+					</div>
+					<h1>上官菲菲</h1>
+					<h5 class="ui-txt-info">推荐好友扫一扫，轻松获得现金奖励</h5>
+				</div>
+				<div class="ui-center ui-code-img">
+					<img src="img/img_code.jpg" width="150"/>
+					<p>编号：888888</p>
+				</div>
+			</section> 
+		 </div> 
+		</div> 
+	 </div> 
+	 <!---end->
+	 <!-////////////////////////常用地址////////////////////////////////-->  
+	 <div class="view"> 
+		<header class="ui-header ui-header-positive">
+		 <a href="#userpage" class="ui-href-l"data-transition="slide-left"><i class="ui-icon-prev"><span>返回</span></i></a>
+		 <h2>我的地址</h2> 
+		</header>  
+		<div class="pages"> 
+			<div class="panel" id="addresspage">
+				<ul class="ui-list ui-border-tb">
+					<li class="ui-border-t">
+							<div class="ui-list-info">
+									<h4 class="ui-nowrap">王女士&nbsp;&nbsp;15968710156</h4>
+									<p>杭州市西湖区文一西路势单力汝拉小镇13幢520</p>
+							</div>
+							<div class="ui-list-img ui-list-redact">
+								<span><a href="#editoraddress" class="ui-txt-muted"><i class="ui-ico-editor ui-txt-f32"></i></a></span>
+							</div>  
+					</li>
+					<li class="ui-border-t">
+							<div class="ui-list-info">
+									<h4 class="ui-nowrap">李小丽&nbsp;女士&nbsp;&nbsp;159687101566</h4>
+									<p>杭州市西湖区文三西路势单力汝拉小镇13幢520</p>
+							</div>
+							<div class="ui-list-img ui-list-redact">
+								<span><a href="#editoraddress" class="ui-txt-muted"><i class="ui-ico-editor ui-txt-f32"></i></a></span>
+							</div>  
+					</li>
+				</ul>  
+			</div>  
+		</div>
+		<div class="ui-public-footer02 ">
+			<a id="ui-btn-addsheet" href="#newaddress" class="c_turquoise"><i class="ui-ico-circleadd ui-txt-f32 c_turquoise"><span>&nbsp;新增地址</span></i></a>
+		</div>
+		
+	
+	 </div> 
+	 <!---end--->
+	 <!--////////////////////////新增地址////////////////////////////////-->  
+	 <div class="view"> 
+			<header class="ui-header ui-header-positive">
+			 <a href="#addresspage" class="ui-href-l" data-transition="slide-left"><i class="ui-icon-prev"><span>返回</span></i></a>
+			 <h2>新增地址</h2> 
+			</header>  
+			<div class="pages"> 
+			 <div class="panel" id="newaddress">
+				<div class="ui-form ui-border-t">
+						<form action="#">
+								<div class="ui-form-item ui-border-b">
+										<label>联系人</label>
+										<input type="text" placeholder="你的姓名">
+								</div>
+								<div class="ui-form-item ui-border-b">     
+										<div class="ui-form-item-radio ui-address-select">
+												<label class="ui-radio" for="radio">
+														<input type="radio" name="radio">
+												</label>
+												<p>先生</p>&nbsp;&nbsp;&nbsp;&nbsp;
+												<label class="ui-radio" for="radio">
+														<input type="radio" name="radio">
+												</label>
+												<p>女士</p>
+										</div>
+								</div>
+								<div class="ui-form-item ui-border-b ui-address-tel">
+										<label>联系电话</label>
+										<input type="text" placeholder="请输入手机号码">
+										<a href="#"class="ui-ico-circleadd ui-txt-f32 ui-address-click"></a>
+								</div>
+								<div class="ui-form-item ui-border-b ui-address-tel ui-address-add" style="display:none;">
+										<label>&nbsp;</label>
+										<input type="text" placeholder="备选电话">
+								</div>
+								<div class="ui-form-item ui-form-item-textarea ui-border-b ui-address-textarea">
+										<label>详细地址</label>
+										<textarea placeholder="街道等详细地址" rows="3"></textarea>
+								</div>
+						</form>
+				</div>
+				<div class="ui-btn-wrap ui-btn-skip"><a href="#addresspage" class="ui-btn-lg ui-btn-cbgreen" data-transition="slide-left">确&nbsp;定</a></div>
+			 </div> 
+			</div> 
+	 </div> 
+	 <!---end--->
+			<!--////////////////////////修改地址////////////////////////////////-->  
+	 <div class="view"> 
+			<header class="ui-header ui-header-positive">
+			 <a href="#addresspage" class="ui-href-l"data-transition="slide-left"><i class="ui-icon-prev"><span>返回</span></i></a>
+			 <h2>修改地址</h2> 
+			</header>  
+			<div class="pages"> 
+			 <div class="panel" id="editoraddress">
+				<div class="ui-form ui-border-t">
+					<form action="#">
+						<div class="ui-form-item ui-border-b">
+							<label>联系人</label>
+							<input type="text" placeholder="李小丽">
+						</div>
+						<div class="ui-form-item ui-border-b">     
+							<div class="ui-form-item-radio ui-address-select">
+								<label class="ui-radio" for="radio">
+										<input type="radio" name="radio" checked>
+								</label>
+								<p>先生</p>&nbsp;&nbsp;&nbsp;&nbsp;
+								<label class="ui-radio" for="radio">
+										<input type="radio" name="radio">
+								</label>
+								<p>女士</p>
+							</div>
+						</div>
+						<div class="ui-form-item ui-border-b ui-address-tel">
+							<label>联系电话</label>
+							<input type="text" placeholder="15968710156">
+							<a href="#"class="ui-ico-circleadd ui-txt-f32 ui-address-click"></a>
+						</div>
+						<div class="ui-form-item ui-border-b ui-address-tel ui-address-add" style="display:none;">
+							<label>&nbsp;</label>
+							<input type="text" placeholder="备选电话">
+						</div>
+						<div class="ui-form-item ui-border-b ui-adder-list">
+							<div class="ui-select-group">
+				                <div class="ui-select ui-addr-select">
+				                    <select>
+				                        <option>省</option>
+				                        <option selected>新疆维吾尔自治区</option>
+				                        <option>浙江省</option>
+				                    </select>
+				                </div>
+				                <div class="ui-select">
+				                    <select>
+				                        <option>市</option>
+				                        <option selected>乌鲁木齐</option>
+				                        <option>杭州市</option>
+				                    </select>
+				                </div>
+				                <div class="ui-select">
+				                    <select>
+				                        <option>区</option>
+				                        <option selected>沙依巴克区</option>
+				                        <option>西湖区</option>
+				                    </select>
+				                </div>
+				            </div>
+						</div>
+						<div class="ui-form-item ui-form-item-textarea ui-border-b ui-address-textarea">
+							<label>详细地址</label>
+							<textarea placeholder="杭州市西湖区文一西路文一西路文一西路汝拉小镇13幢520" rows="3"></textarea>
+						</div>
+					</form>
+				</div>
+				<div class="ui-btn-wrap ui-btn-skip"><a href="#addresspage" class="ui-btn-lg ui-btn-cbgreen" data-transition="slide-left">确&nbsp;定</a></div>
+			 </div> 
+			</div> 
+	 </div> 
+	 <!---end--->
+	 <!--li skip to new pages-->
+		 <script>
+			$('.ui-public-accout li').on('click', function() {
+			$.afui.loadContent("#userAccout",false,false,"left");
+			});
+			$('.ui-user-order').on('click', function() {
+			$.afui.loadContent("#orderpage",false,false,"left");
+			});
+			$('.ui-user-address').on('click', function() {
+			$.afui.loadContent("#addresspage",false,false,"left");
+			});
+			$('.ui-tomb-skip').on('click', function() {
+			$.afui.loadContent("#cemeteryDetail",false,false,"left");
+			});
+			$(".ui-address-click").click(function(){
+			$(".ui-address-add").show();
+			});
+			$('.ui-etiquette-pbottom').on('click', function() {
+			$.afui.loadContent("#etiquetteDetails",false,false,"left");
+			});
+			$('.ui-btn-pay').on('click', function() {
+			$.afui.loadContent("#orderpage",false,false,"left");
+			});
+			$('.ui-order-list').on('click', function() {
+	      $.afui.loadContent("#listConfirm",false,false,"left");
+	      });
+			//登录
+			$('.ui-public-accout02').on('click', function() {
+			$.afui.loadContent("#loginpage",false,false,"left");
+			});
+
+			$('.ui-pubilc-exit li').on('tap',function(){
+				$.afui.actionsheet(
+				[{
+					text: '确认退出',
+					cssClasses: 'red',
+					handler: function () {
+						$.afui.loadContent("#main",false,false,"left");
+					}
+			}]);
+		});
+	 </script>
+	 <!--skip end-->
+	</div>   
+ </body>
+</html>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ak值"></script>
+<script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script>
+		// 百度地图API功能
+		//GPS坐标
+		//xx,yy 东部软软件园地址
+		
+document.addEventListener("deviceready", onDeviceReady, false);
+		
+function onDeviceReady() {
+		navigator.geolocation.getCurrentPosition(onSuccess, onError, { maximumAge: 5000, timeout: 3000, enableHighAccuracy: true });
+		}
+
+function onSuccess(position) {
+		var xx = position.coords.latitude;
+		var yy = position.coords.longitude;
+		var gpsPoint = new BMap.Point(xx,yy);
+		//坐标转换完之后的回调函数
+		translateCallback = function (point){
+				var gc = new BMap.Geocoder();
+				gc.getLocation(point, function(rs){
+											 var addComp = rs.addressComponents;
+											 $("#mapid").html(addComp.city + ", " + addComp.district + ", " + addComp.street);
+											 /*alert(addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street);*/
+											 });
+		}
+		setTimeout(function(){
+							 BMap.Convertor.translate(gpsPoint,0,translateCallback);     //真实经纬度转成百度坐标
+							 }, 2000);
+}
+
+function onError(error) {
+		alert('很抱歉，因为网络原因，定位失败。');
+}
+
+
+</script>

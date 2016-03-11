@@ -1,0 +1,82 @@
+/* lww 2015-11-11 CSS Document */
+.ui-nowrap span{ float:right; color:#777;}
+/*=====tab=====*/
+.ui-tab-dir dd{ display:none;}
+.ui-tab-dir .current{ display:block;}
+
+/*===list===*/
+.ui-list-linheight{ margin-top:-2px; margin-bottom:5px;}
+.ui-list-block{ display:block;}
+.ui-list-pading { margin-top:10px;}
+.ui-list-pading .ui-list-info h4{ font-size:16px;}
+.ui-list-pading .ui-list-img140{ margin-top:16px;}
+
+.ui-bottom-btn{ text-align:right; padding-top:0px; padding-bottom:0px;}
+.ui-bottom-btn .ui-btn-grey{ border-color:#999; color:#999;}
+.ui-list .ui-btn-yel{ border-color:#ff4222; color:#ff4222;}
+.ui-btn-block{
+background-color: #1abc9c;
+border-color: #27bfa1;
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.5,#1abc9c),to(#27bfa1));
+color: #fff;
+}
+
+.ui-list-info span{ text-align:left;}
+
+.ui-box-linheight{ margin-top:10px;}
+
+/*===upload img===*/
+.ui-photo-box{ width:90%; height:100px; border:2px dashed #bdc3c7; margin:10px 5%; text-align:center;color:#999; -moz-border-radius:5px;  
+                -webkit-border-radius:5px;  
+                border-radius:5px; }
+.ui-photo-box i{ margin-top:10px;}
+.ui-photo-box p{ line-height:32px; }
+
+/*===messageDate===*/
+ul.list>li.swipe-reveal-up{ margin-left: 0px;}
+.messagecont{
+    text-align: left; line-height: 32px;
+}
+.messagecont p{min-height: 40px;}
+.messageDate {
+        color:#1abc9c;
+        font-weight: bold;
+        text-align: right;
+        line-height: 32px;
+    }
+.archiveup{
+        line-height: 70px;
+}
+.supplieslist{
+    border-radius:0px;
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+.supplieslist input[type="checkbox"] + label{
+    width: 100%;
+    margin-right: -40px;
+    padding: 10px 0 0 15px;
+}
+
+/* CSS responsive square grid */
+.gridnew{ padding:0px 10px;}
+.grid-photo {margin:3px -1px;}
+.grid-photo:after,.ui-img-dir:after {content:'';display:block;clear:both;}
+.grid-photo li {position: relative; display:block; float:left; width: 10%; padding-bottom: 10%;}
+.grid-photo .grid-photo-box {position: absolute;left: 3px;right: 3px;top: 3px;bottom: 3px; background-color: rgba(128,128,128,0.2);}
+.grid-photo img {width:100%;height:100%}
+@media only screen and (max-width : 1024px) {
+.grid-photo li {width: 12.5%; padding-bottom: 12.5%;}
+}
+@media only screen and (max-width : 768px) {
+.grid-photo li {width: 16.6%; padding-bottom: 16.6%;}
+}
+@media only screen and (max-width : 480px) {
+.grid-photo li {width: 25%; padding-bottom: 25%;}
+}
+@media only screen and (max-width : 320px) {
+.grid-photo li {width: 33.3%; padding-bottom: 33.3%;}
+}
+
+.ui-img-dir{ background:#000; height:100%; }
+.ui-img-dir img{ width:100%; vertical-align:middle;}
