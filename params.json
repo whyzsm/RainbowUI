@@ -1,7 +1,7 @@
 {
   "name": "RainbowUI",
   "tagline": "RainbowUI－移动前端框架",
-  "body": "#RainbowUI\r\n### 欢迎来到彩虹UI.\r\n这是我第一次写前端框架，移动端上的。当人不是从零开始，我是实用主义者，集合众多前辈的智慧和代码。我努力让自己的代码看起来优雅些，但是我正职工作是ui设计师，在原生js上有很大的欠缺，所以更多的优化工作，我放在了html5＋css3.0这一部分。\r\n\r\n### 关于框架本身\r\nRainbowUI汇集了SUI、FrozenUI、Appframework、AmazeUI等优秀的前段框架，我只是做了一下整合。这个框架主要用于我个人的学习和交流。\r\n\r\n### 目录结构\r\n* css\r\n － css文件存放\r\n* font\r\n － 字体文件夹\r\n* img\r\n － 图片文件夹\r\n* js\r\n － js文件存放\r\n* lib\r\n － 存放第三类依赖库\r\n* res\r\n － phonegap图标适配\r\n* demo\r\n －示例\r\n* doc\r\n － 代码说明文档\r\n\r\n### [查看案例](http://whyzsm.github.io/RbowUI/demo/index.html)\r\n\r\n",
+  "body": "#RainbowUI\r\n### 欢迎来到彩虹UI.\r\n这是我第一次写前端框架，移动端上的。当人不是从零开始，我是实用主义者，集合众多前辈的智慧和代码。我努力让自己的代码看起来优雅些，但是我正职工作是ui设计师，在原生js上有很大的欠缺，所以更多的优化工作，我放在了html5＋css3.0这一部分。\r\n* * \r\n————小朱（whyzsm）\r\n### 关于框架本身\r\nRainbowUI汇集了SUI、FrozenUI、Appframework、AmazeUI等优秀的前段框架，我只是做了一下整合。这个框架主要用于我个人的学习和交流。\r\n\r\n### 目录结构\r\n* css\r\n － css文件存放\r\n* font\r\n － 字体文件夹\r\n* img\r\n － 图片文件夹\r\n* js\r\n － js文件存放\r\n* lib\r\n － 存放第三类依赖库\r\n* res\r\n － phonegap图标适配\r\n* demo\r\n －示例\r\n* doc\r\n － 代码说明文档\r\n\r\n### [查看案例](http://whyzsm.github.io/RbowUI/demo/index.html)\r\n\r\n### [UI设计案例查看地址](http://color7.lofter.com/)\r\n",
   "google": "",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
